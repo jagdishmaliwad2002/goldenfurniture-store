@@ -34,13 +34,13 @@ export function Navbar() {
 
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group">
-          <img src={logoImage} alt="Golden Furniture" className="h-12 w-auto object-contain drop-shadow-md" />
+          <img src={logoImage} alt="ગોલ્ડન ફર્નિચર" className="h-12 w-auto object-contain drop-shadow-md" />
           <div className="flex flex-col">
             <span className="font-serif text-xl md:text-2xl font-bold tracking-tight text-red-600 group-hover:text-red-700 transition-colors uppercase">
               LUNAWADA
             </span>
-            <span className="text-[0.6rem] uppercase tracking-[0.2em] text-muted-foreground hidden md:block">
-              Premium Furniture Store
+            <span className="text-[0.6rem] uppercase tracking-[0.2em] text-red-500 font-bold hidden md:block">
+              ગોલ્ડન ફર્નિચર
             </span>
           </div>
         </Link>
@@ -94,11 +94,11 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <img src={logoImage} alt="Golden Furniture" className="h-10 w-auto" />
+              <img src={logoImage} alt="ગોલ્ડન ફર્નિચર" className="h-10 w-auto" />
               <div>
                 <h3 className="font-serif text-xl font-bold text-red-600 uppercase">LUNAWADA</h3>
-                <p className="text-[0.6rem] uppercase tracking-[0.1em] text-muted-foreground">
-                  Premium Furniture Store
+                <p className="text-[0.6rem] uppercase tracking-[0.1em] text-red-500 font-bold">
+                  ગોલ્ડન ફર્નિચર
                 </p>
               </div>
             </div>
