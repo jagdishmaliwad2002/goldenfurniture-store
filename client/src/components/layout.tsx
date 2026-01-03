@@ -93,7 +93,7 @@ export function Footer() {
               </h3>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed max-w-xs">
-              ગોલ્ડન ફર્નિચર - તમારી જીવનશૈલી માટે શ્રેષ્ઠ પસંદગી.
+              ગોલ્ડન ફર્નિચર - તમારી જીવનશૈલી માટે શ્રેષ્ઠ પસંદગી. Crafting timeless furniture pieces that bring elegance and comfort to your home since 2010. Visit our store in Lunawada, Gujarat.
             </p>
             <div className="flex gap-4">
               <Button variant="ghost" size="icon" className="h-8 w-8 hover:text-primary hover:bg-transparent -ml-2"><Facebook className="h-4 w-4" /></Button>
@@ -104,41 +104,50 @@ export function Footer() {
 
           {/* Links */}
           <div>
-            <h4 className="font-serif font-bold text-lg mb-6">Shop</h4>
+            <h4 className="font-serif font-bold text-lg mb-6">Quick Links</h4>
             <ul className="space-y-3 text-sm text-muted-foreground">
-              <li><Link href="#" className="hover:text-primary transition-colors">Living Room</Link></li>
-              <li><Link href="#" className="hover:text-primary transition-colors">Bedroom</Link></li>
-              <li><Link href="#" className="hover:text-primary transition-colors">Dining</Link></li>
-              <li><Link href="#" className="hover:text-primary transition-colors">Office</Link></li>
-              <li><Link href="#" className="hover:text-primary transition-colors">New Arrivals</Link></li>
+              <li><Link href="/" className="hover:text-primary transition-colors">Home</Link></li>
+              <li><Link href="/shop" className="hover:text-primary transition-colors">Shop</Link></li>
+              <li><Link href="/collections" className="hover:text-primary transition-colors">Collections</Link></li>
+              <li><Link href="#" className="hover:text-primary transition-colors">Inspiration</Link></li>
+              <li><Link href="/about" className="hover:text-primary transition-colors">About Us</Link></li>
+              <li><Link href="/contact" className="hover:text-primary transition-colors">Contact</Link></li>
             </ul>
           </div>
 
           {/* Support */}
           <div>
-            <h4 className="font-serif font-bold text-lg mb-6">Support</h4>
-            <ul className="space-y-3 text-sm text-muted-foreground">
-              <li><Link href="#" className="hover:text-primary transition-colors">Contact Us</Link></li>
-              <li><Link href="#" className="hover:text-primary transition-colors">FAQs</Link></li>
-              <li><Link href="#" className="hover:text-primary transition-colors">Shipping & Returns</Link></li>
-              <li><Link href="#" className="hover:text-primary transition-colors">Care Guide</Link></li>
-              <li><Link href="#" className="hover:text-primary transition-colors">Privacy Policy</Link></li>
+            <h4 className="font-serif font-bold text-lg mb-6">Contact Us</h4>
+            <ul className="space-y-4 text-sm text-muted-foreground">
+              <li className="flex items-start gap-3">
+                <MapPin className="h-5 w-5 text-primary shrink-0" />
+                <span>Modasa Road, opposite SBI Bank,<br />Lunawada, Gujarat 389230</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <Phone className="h-5 w-5 text-primary shrink-0" />
+                <span>+91 97372 17844</span>
+              </li>
+              <li className="flex items-center gap-3 pl-8">
+                <span>+91 98253 77067</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <Clock className="h-5 w-5 text-primary shrink-0" />
+                <span>Closed ⋅ Opens 9:15 am Mon</span>
+              </li>
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h4 className="font-serif font-bold text-lg mb-6">Contact</h4>
-            <ul className="space-y-4 text-sm text-muted-foreground">
-              <li className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 text-primary shrink-0" />
-                <span>123 Golden Avenue, Luxury District,<br />Lunawada, GJ 389230</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <Phone className="h-5 w-5 text-primary shrink-0" />
-                <span>+91 987 654 3210</span>
-              </li>
-            </ul>
+            <h4 className="font-serif font-bold text-lg mb-6">Newsletter</h4>
+            <div className="space-y-4">
+              <p className="text-sm text-muted-foreground">Subscribe to get updates on new collections and exclusive offers.</p>
+              <div className="flex gap-2">
+                <Input placeholder="Your email address" className="bg-background" />
+                <Button size="icon" className="bg-primary shrink-0"><ArrowRight className="h-4 w-4" /></Button>
+              </div>
+              <p className="text-[0.7rem] text-muted-foreground">info@goldenfurniture.com</p>
+            </div>
           </div>
         </div>
 

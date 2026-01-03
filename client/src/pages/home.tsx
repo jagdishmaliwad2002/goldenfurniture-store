@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Star, Truck, ShieldCheck, Clock } from "lucide-react";
+import { ArrowRight, Star, Truck, ShieldCheck, Clock, Lock, Armchair, Briefcase, LayoutGrid } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Navbar, Footer } from "@/components/layout";
 
@@ -8,6 +8,10 @@ import heroImage from "@assets/generated_images/luxury_living_room_with_golden_a
 import productChair from "@assets/generated_images/golden_velvet_armchair.png";
 import productTable from "@assets/generated_images/marble_dining_table_gold_legs.png";
 import productBed from "@assets/generated_images/luxury_bedroom_interior.png";
+import officeChair from "@assets/generated_images/modern_office_chair_luxury.png";
+import tijoriSafe from "@assets/generated_images/luxury_steel_tijori_safe.png";
+import customSofa from "@assets/generated_images/bespoke_customized_red_sofa.png";
+import lockerUnit from "@assets/generated_images/luxury_steel_locker_unit.png";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -33,8 +37,8 @@ export default function Home() {
         <section className="relative h-[90vh] min-h-[600px] flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img 
-              src={heroImage} 
-              alt="Luxury Living Room" 
+              src={customSofa} 
+              alt="Bespoke Red Sofa" 
               className="w-full h-full object-cover brightness-[0.85]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-80" />
@@ -48,251 +52,132 @@ export default function Home() {
               className="space-y-6 max-w-4xl mx-auto"
             >
               <span className="inline-block py-1 px-3 border border-white/30 rounded-full text-xs font-medium tracking-[0.2em] uppercase backdrop-blur-sm bg-white/10">
-                New Collection 2024
+                Since 2010 • Lunawada
               </span>
               <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-medium leading-tight tracking-tight">
-                The Art of <br/>
-                <span className="italic font-light text-primary-foreground/90">Golden Living</span>
+                Crafting <span className="italic font-light text-primary-foreground/90">Comfort</span> <br/>
+                & Elegance
               </h1>
               <p className="text-lg md:text-xl text-white/80 max-w-xl mx-auto font-light leading-relaxed">
-                Elevate your home with our exclusive collection of premium furniture. 
-                Timeless design meets modern luxury.
+                Premium furniture tailored to your lifestyle. From bespoke sofas to high-security lockers, 
+                discover excellence at Golden Furniture.
               </p>
               <div className="pt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <Button size="lg" className="bg-white text-black hover:bg-white/90 rounded-none px-8 h-14 text-base tracking-wide min-w-[180px]">
+                <Button size="lg" className="bg-red-600 text-white hover:bg-red-700 rounded-none px-8 h-14 text-base tracking-wide min-w-[180px]">
                   Shop Collection
                 </Button>
                 <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10 rounded-none px-8 h-14 text-base tracking-wide min-w-[180px]">
-                  View Catalog
+                  Explore Bespoke
                 </Button>
               </div>
             </motion.div>
           </div>
         </section>
 
-        {/* Features Strip */}
-        <section className="py-10 border-b bg-card">
+        {/* Categories Section */}
+        <section className="py-24 bg-card">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 divide-y md:divide-y-0 md:divide-x divide-border">
-              <div className="flex items-center justify-center gap-4 py-4">
-                <div className="p-3 rounded-full bg-primary/10 text-primary">
-                  <Truck className="h-6 w-6" />
+            <div className="text-center mb-16 space-y-4">
+              <h2 className="font-serif text-4xl md:text-5xl font-medium">Our Specialized Range</h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto">Providing high-quality solutions for your home and office in Gujarat.</p>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+              {[
+                { icon: Armchair, label: "Sofa", img: customSofa },
+                { icon: Briefcase, label: "Office", img: officeChair },
+                { icon: Lock, label: "Tijori", img: tijoriSafe },
+                { icon: LayoutGrid, label: "Lockers", img: lockerUnit },
+                { icon: Star, label: "Beds", img: productBed },
+                { icon: ArrowRight, label: "Dining", img: productTable },
+              ].map((item, i) => (
+                <div key={i} className="group cursor-pointer text-center space-y-4">
+                  <div className="aspect-square bg-secondary/30 rounded-full flex items-center justify-center transition-all duration-300 group-hover:bg-red-600 group-hover:text-white group-hover:scale-110 overflow-hidden relative">
+                    <img src={item.img} alt={item.label} className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-40" />
+                    <item.icon className="h-8 w-8 relative z-10" />
+                  </div>
+                  <h3 className="font-medium uppercase tracking-widest text-sm">{item.label}</h3>
                 </div>
-                <div>
-                  <h4 className="font-serif font-bold text-lg">Free Shipping</h4>
-                  <p className="text-sm text-muted-foreground">On orders over $500</p>
-                </div>
-              </div>
-              <div className="flex items-center justify-center gap-4 py-4">
-                <div className="p-3 rounded-full bg-primary/10 text-primary">
-                  <ShieldCheck className="h-6 w-6" />
-                </div>
-                <div>
-                  <h4 className="font-serif font-bold text-lg">Lifetime Warranty</h4>
-                  <p className="text-sm text-muted-foreground">Certified quality protection</p>
-                </div>
-              </div>
-              <div className="flex items-center justify-center gap-4 py-4">
-                <div className="p-3 rounded-full bg-primary/10 text-primary">
-                  <Clock className="h-6 w-6" />
-                </div>
-                <div>
-                  <h4 className="font-serif font-bold text-lg">24/7 Support</h4>
-                  <p className="text-sm text-muted-foreground">Dedicated concierge service</p>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </section>
 
-        {/* Featured Collection */}
-        <section className="py-24 bg-secondary/20">
+        {/* Featured Products */}
+        <section className="py-24 bg-secondary/10">
           <div className="container mx-auto px-4">
-            <motion.div 
-              initial="initial"
-              whileInView="animate"
-              viewport={{ once: true }}
-              variants={staggerContainer}
-              className="space-y-16"
-            >
-              <div className="flex flex-col md:flex-row justify-between items-end gap-6 border-b border-border/50 pb-6">
-                <motion.div variants={fadeIn} className="max-w-2xl">
-                  <h2 className="font-serif text-4xl md:text-5xl font-medium mb-4">Curated Excellence</h2>
-                  <p className="text-muted-foreground text-lg font-light">
-                    Handpicked pieces that define sophistication. Each item in our collection tells a story of craftsmanship and luxury.
-                  </p>
-                </motion.div>
-                <motion.div variants={fadeIn}>
-                  <Button variant="link" className="text-primary hover:text-primary/80 p-0 text-base group">
-                    View all products <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                  </Button>
-                </motion.div>
-              </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {/* Product Card: Tijori */}
+              <motion.div variants={fadeIn} initial="initial" whileInView="animate" viewport={{ once: true }} className="group">
+                <div className="relative aspect-[3/4] overflow-hidden bg-white mb-4">
+                  <img src={tijoriSafe} alt="Premium Tijori" className="w-full h-full object-cover transition-transform group-hover:scale-110" />
+                  <div className="absolute top-4 left-4 bg-red-600 text-white text-[0.6rem] font-bold px-2 py-1 uppercase">High Security</div>
+                </div>
+                <h3 className="font-serif text-xl">Imperial Steel Tijori</h3>
+                <p className="text-muted-foreground text-sm">Advanced Locking System</p>
+              </motion.div>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                {/* Product 1 */}
-                <motion.div variants={fadeIn} className="group cursor-pointer">
-                  <div className="relative aspect-[4/5] overflow-hidden bg-white mb-6 shadow-sm">
-                    <div className="absolute top-4 left-4 z-10">
-                      <span className="bg-primary text-white text-xs font-bold px-3 py-1 uppercase tracking-wider">New</span>
-                    </div>
-                    <img 
-                      src={productChair} 
-                      alt="Velvet Armchair" 
-                      className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300" />
-                    <Button className="absolute bottom-6 left-1/2 -translate-x-1/2 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 bg-white text-black hover:bg-white/90 min-w-[140px] shadow-lg">
-                      Add to Cart
-                    </Button>
-                  </div>
-                  <div className="text-center space-y-2">
-                    <p className="text-xs uppercase tracking-widest text-muted-foreground">Living Room</p>
-                    <h3 className="font-serif text-2xl group-hover:text-primary transition-colors">Royal Velvet Armchair</h3>
-                    <p className="font-medium text-lg">$1,299.00</p>
-                  </div>
-                </motion.div>
+              {/* Product Card: Office Chair */}
+              <motion.div variants={fadeIn} initial="initial" whileInView="animate" viewport={{ once: true }} transition={{ delay: 0.1 }} className="group">
+                <div className="relative aspect-[3/4] overflow-hidden bg-white mb-4">
+                  <img src={officeChair} alt="Executive Chair" className="w-full h-full object-cover transition-transform group-hover:scale-110" />
+                  <div className="absolute top-4 left-4 bg-black text-white text-[0.6rem] font-bold px-2 py-1 uppercase">Executive</div>
+                </div>
+                <h3 className="font-serif text-xl">Director's Series Chair</h3>
+                <p className="text-muted-foreground text-sm">Ergonomic Excellence</p>
+              </motion.div>
 
-                {/* Product 2 */}
-                <motion.div variants={fadeIn} className="group cursor-pointer">
-                  <div className="relative aspect-[4/5] overflow-hidden bg-white mb-6 shadow-sm">
-                    <img 
-                      src={productTable} 
-                      alt="Marble Dining Table" 
-                      className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300" />
-                    <Button className="absolute bottom-6 left-1/2 -translate-x-1/2 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 bg-white text-black hover:bg-white/90 min-w-[140px] shadow-lg">
-                      Add to Cart
-                    </Button>
-                  </div>
-                  <div className="text-center space-y-2">
-                    <p className="text-xs uppercase tracking-widest text-muted-foreground">Dining Room</p>
-                    <h3 className="font-serif text-2xl group-hover:text-primary transition-colors">Carrara Gold Dining Table</h3>
-                    <p className="font-medium text-lg">$3,499.00</p>
-                  </div>
-                </motion.div>
+              {/* Product Card: Red Sofa */}
+              <motion.div variants={fadeIn} initial="initial" whileInView="animate" viewport={{ once: true }} transition={{ delay: 0.2 }} className="group">
+                <div className="relative aspect-[3/4] overflow-hidden bg-white mb-4">
+                  <img src={customSofa} alt="Bespoke Sofa" className="w-full h-full object-cover transition-transform group-hover:scale-110" />
+                  <div className="absolute top-4 left-4 bg-red-600 text-white text-[0.6rem] font-bold px-2 py-1 uppercase">Bespoke</div>
+                </div>
+                <h3 className="font-serif text-xl">Crimson Velvet Sectional</h3>
+                <p className="text-muted-foreground text-sm">Customized Dimensions</p>
+              </motion.div>
 
-                {/* Product 3 */}
-                <motion.div variants={fadeIn} className="group cursor-pointer">
-                  <div className="relative aspect-[4/5] overflow-hidden bg-white mb-6 shadow-sm">
-                     <div className="absolute top-4 left-4 z-10">
-                      <span className="bg-black text-white text-xs font-bold px-3 py-1 uppercase tracking-wider">Best Seller</span>
-                    </div>
-                    <img 
-                      src={productBed} 
-                      alt="Luxury Bed Suite" 
-                      className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300" />
-                    <Button className="absolute bottom-6 left-1/2 -translate-x-1/2 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 bg-white text-black hover:bg-white/90 min-w-[140px] shadow-lg">
-                      Add to Cart
-                    </Button>
-                  </div>
-                  <div className="text-center space-y-2">
-                    <p className="text-xs uppercase tracking-widest text-muted-foreground">Bedroom</p>
-                    <h3 className="font-serif text-2xl group-hover:text-primary transition-colors">Imperial Tufted Suite</h3>
-                    <p className="font-medium text-lg">$4,899.00</p>
-                  </div>
-                </motion.div>
-              </div>
-            </motion.div>
+              {/* Product Card: Lockers */}
+              <motion.div variants={fadeIn} initial="initial" whileInView="animate" viewport={{ once: true }} transition={{ delay: 0.3 }} className="group">
+                <div className="relative aspect-[3/4] overflow-hidden bg-white mb-4">
+                  <img src={lockerUnit} alt="Steel Locker" className="w-full h-full object-cover transition-transform group-hover:scale-110" />
+                </div>
+                <h3 className="font-serif text-xl">Industrial Steel Locker</h3>
+                <p className="text-muted-foreground text-sm">Durable Storage</p>
+              </motion.div>
+            </div>
           </div>
         </section>
 
-        {/* Categories Grid */}
+        {/* Visit Section */}
         <section className="py-24">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-16 max-w-2xl mx-auto">
-              <span className="text-primary text-sm font-bold uppercase tracking-widest mb-2 block">Categories</span>
-              <h2 className="font-serif text-4xl md:text-5xl font-medium">Shop by Room</h2>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 h-auto lg:h-[600px]">
-              {/* Large Item */}
-              <div className="lg:col-span-6 relative group overflow-hidden h-[300px] lg:h-full">
-                <img 
-                  src={heroImage} 
-                  alt="Living Room" 
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 brightness-90"
-                />
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors" />
-                <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-6">
-                  <h3 className="font-serif text-4xl mb-2">Living Room</h3>
-                  <p className="text-white/80 mb-6 max-w-xs text-center">Sofas, Coffee Tables, and Accents</p>
-                  <Button variant="outline" className="text-white border-white hover:bg-white hover:text-black rounded-none">
-                    Explore
-                  </Button>
-                </div>
-              </div>
-
-              {/* Right Column Stack */}
-              <div className="lg:col-span-6 flex flex-col gap-6 h-full">
-                <div className="flex-1 relative group overflow-hidden h-[300px] lg:h-auto">
-                  <img 
-                    src={productTable} 
-                    alt="Dining" 
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 brightness-90"
-                  />
-                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors" />
-                  <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-6">
-                    <h3 className="font-serif text-3xl mb-2">Dining Room</h3>
-                    <Button variant="link" className="text-white hover:text-white/80 p-0 text-base">Shop Now</Button>
-                  </div>
-                </div>
-                <div className="flex-1 relative group overflow-hidden h-[300px] lg:h-auto">
-                  <img 
-                    src={productBed} 
-                    alt="Bedroom" 
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 brightness-90"
-                  />
-                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors" />
-                  <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-6">
-                    <h3 className="font-serif text-3xl mb-2">Bedroom</h3>
-                    <Button variant="link" className="text-white hover:text-white/80 p-0 text-base">Shop Now</Button>
+          <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <h2 className="font-serif text-4xl md:text-5xl font-medium">Visit Our Showroom</h2>
+              <p className="text-muted-foreground text-lg leading-relaxed">
+                Experience the quality firsthand. Visit our store in Lunawada, Gujarat, where our designers can help you customize the perfect pieces for your home.
+              </p>
+              <div className="space-y-4">
+                <div className="flex items-center gap-4">
+                  <Clock className="h-6 w-6 text-red-600" />
+                  <div>
+                    <p className="font-bold">Operating Hours</p>
+                    <p className="text-muted-foreground">Mon - Sat: 9:15 AM - 8:30 PM</p>
                   </div>
                 </div>
               </div>
+              <Button size="lg" className="rounded-none bg-black text-white px-10 h-14">Get Directions</Button>
             </div>
-          </div>
-        </section>
-
-        {/* Testimonials */}
-        <section className="py-24 bg-primary text-primary-foreground">
-          <div className="container mx-auto px-4 text-center">
-            <div className="flex justify-center mb-8 text-white/90">
-              <Star className="h-6 w-6 fill-current" />
-              <Star className="h-6 w-6 fill-current" />
-              <Star className="h-6 w-6 fill-current" />
-              <Star className="h-6 w-6 fill-current" />
-              <Star className="h-6 w-6 fill-current" />
+            <div className="h-[400px] bg-secondary/20 relative overflow-hidden">
+               <img src={heroImage} alt="Showroom" className="w-full h-full object-cover grayscale opacity-50" />
+               <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="bg-white p-8 shadow-2xl border border-border">
+                    <h4 className="font-serif text-2xl mb-4">Lunawada Store</h4>
+                    <p className="text-muted-foreground">Modasa Road, opposite SBI Bank</p>
+                    <p className="text-muted-foreground">Gujarat 389230</p>
+                  </div>
+               </div>
             </div>
-            <h2 className="font-serif text-3xl md:text-5xl italic leading-relaxed max-w-4xl mx-auto mb-12">
-              "The quality of the furniture is unmatched. Lunawada has completely transformed our living space into a sanctuary of elegance."
-            </h2>
-            <div className="space-y-1">
-              <p className="font-bold text-lg tracking-wide uppercase">Sarah Jenkins</p>
-              <p className="text-white/70 text-sm">Interior Designer, Mumbai</p>
-            </div>
-          </div>
-        </section>
-
-        {/* Newsletter */}
-        <section className="py-24 border-b">
-          <div className="container mx-auto px-4 max-w-xl text-center space-y-8">
-            <div className="space-y-4">
-              <h2 className="font-serif text-3xl font-bold">Join Our Exclusive Club</h2>
-              <p className="text-muted-foreground">Subscribe to receive updates, access to exclusive deals, and more.</p>
-            </div>
-            <div className="flex gap-2">
-              <input 
-                type="email" 
-                placeholder="Enter your email address" 
-                className="flex-1 h-12 px-4 border border-input bg-background focus:outline-none focus:ring-1 focus:ring-primary transition-all"
-              />
-              <Button className="h-12 px-8 rounded-none">Subscribe</Button>
-            </div>
-            <p className="text-xs text-muted-foreground">By subscribing you agree to our Terms & Conditions and Privacy Policy.</p>
           </div>
         </section>
       </main>
