@@ -34,7 +34,6 @@ export function Navbar() {
 
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group">
-          <img src={logoImage} alt="ગોલ્ડન ફર્નિચર" className="h-14 w-auto object-contain drop-shadow-md" />
           <span className="font-serif text-2xl md:text-3xl font-bold tracking-tight text-red-600 group-hover:text-red-700 transition-colors">
             ગોલ્ડન ફર્નિચર
           </span>
@@ -89,7 +88,6 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <img src={logoImage} alt="ગોલ્ડન ફર્નિચર" className="h-12 w-auto" />
               <h3 className="font-serif text-2xl font-bold text-red-600">
                 ગોલ્ડન ફર્નિચર
               </h3>
