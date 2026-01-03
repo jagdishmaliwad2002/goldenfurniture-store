@@ -1,0 +1,159 @@
+import { Link } from "wouter";
+import { Search, ShoppingBag, User, Menu, X, Phone, MapPin, Facebook, Instagram, Twitter } from "lucide-react";
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Input } from "@/components/ui/input";
+
+export function Navbar() {
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+
+  return (
+    <nav className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-md supports-[backdrop-filter]:bg-background/60">
+      <div className="container mx-auto px-4 h-20 flex items-center justify-between">
+        {/* Mobile Menu */}
+        <div className="md:hidden">
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button variant="ghost" size="icon" className="-ml-2">
+                <Menu className="h-6 w-6" />
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="left" className="w-[300px] sm:w-[400px]">
+              <div className="flex flex-col gap-6 mt-8">
+                <Link href="/" className="text-xl font-serif font-bold">Home</Link>
+                <Link href="/shop" className="text-xl font-serif font-bold">Shop</Link>
+                <Link href="/collections" className="text-xl font-serif font-bold">Collections</Link>
+                <Link href="/about" className="text-xl font-serif font-bold">About Us</Link>
+                <Link href="/contact" className="text-xl font-serif font-bold">Contact</Link>
+              </div>
+            </SheetContent>
+          </Sheet>
+        </div>
+
+        {/* Logo */}
+        <Link href="/" className="flex flex-col items-center md:items-start group">
+          <span className="font-serif text-2xl md:text-3xl font-bold tracking-tight text-primary group-hover:text-primary/90 transition-colors">
+            LUNAWADA
+          </span>
+          <span className="text-[0.6rem] uppercase tracking-[0.3em] text-muted-foreground hidden md:block">
+            Golden Furniture Store
+          </span>
+        </Link>
+
+        {/* Desktop Navigation */}
+        <div className="hidden md:flex items-center gap-8">
+          <Link href="/" className="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wide">Home</Link>
+          <Link href="/shop" className="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wide">Shop</Link>
+          <Link href="/collections" className="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wide">Collections</Link>
+          <Link href="/about" className="text-sm font-medium hover:text-primary transition-colors uppercase tracking-wide">About</Link>
+        </div>
+
+        {/* Actions */}
+        <div className="flex items-center gap-2 md:gap-4">
+          <div className={`hidden md:flex items-center transition-all duration-300 ${isSearchOpen ? 'w-64 opacity-100' : 'w-0 opacity-0 overflow-hidden'}`}>
+            <Input 
+              type="search" 
+              placeholder="Search furniture..." 
+              className="h-9 bg-secondary/50 border-transparent focus:border-primary/20"
+            />
+          </div>
+          
+          <Button 
+            variant="ghost" 
+            size="icon" 
+            onClick={() => setIsSearchOpen(!isSearchOpen)}
+            className="hover:text-primary hover:bg-transparent"
+          >
+            <Search className="h-5 w-5" />
+          </Button>
+          
+          <Button variant="ghost" size="icon" className="hover:text-primary hover:bg-transparent hidden sm:flex">
+            <User className="h-5 w-5" />
+          </Button>
+
+          <Button variant="ghost" size="icon" className="relative hover:text-primary hover:bg-transparent">
+            <ShoppingBag className="h-5 w-5" />
+            <span className="absolute top-1 right-1 h-2 w-2 rounded-full bg-primary animate-pulse" />
+          </Button>
+        </div>
+      </div>
+    </nav>
+  );
+}
+
+export function Footer() {
+  return (
+    <footer className="bg-secondary/30 pt-16 pb-8 border-t">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+          {/* Brand */}
+          <div className="space-y-4">
+            <div>
+              <h3 className="font-serif text-2xl font-bold text-primary">LUNAWADA</h3>
+              <p className="text-[0.7rem] uppercase tracking-[0.2em] text-muted-foreground">
+                Golden Furniture Store
+              </p>
+            </div>
+            <p className="text-muted-foreground text-sm leading-relaxed max-w-xs">
+              Crafting timeless elegance for modern homes. Every piece is a masterpiece of design and comfort.
+            </p>
+            <div className="flex gap-4">
+              <Button variant="ghost" size="icon" className="h-8 w-8 hover:text-primary hover:bg-transparent -ml-2"><Facebook className="h-4 w-4" /></Button>
+              <Button variant="ghost" size="icon" className="h-8 w-8 hover:text-primary hover:bg-transparent"><Instagram className="h-4 w-4" /></Button>
+              <Button variant="ghost" size="icon" className="h-8 w-8 hover:text-primary hover:bg-transparent"><Twitter className="h-4 w-4" /></Button>
+            </div>
+          </div>
+
+          {/* Links */}
+          <div>
+            <h4 className="font-serif font-bold text-lg mb-6">Shop</h4>
+            <ul className="space-y-3 text-sm text-muted-foreground">
+              <li><Link href="#" className="hover:text-primary transition-colors">Living Room</Link></li>
+              <li><Link href="#" className="hover:text-primary transition-colors">Bedroom</Link></li>
+              <li><Link href="#" className="hover:text-primary transition-colors">Dining</Link></li>
+              <li><Link href="#" className="hover:text-primary transition-colors">Office</Link></li>
+              <li><Link href="#" className="hover:text-primary transition-colors">New Arrivals</Link></li>
+            </ul>
+          </div>
+
+          {/* Support */}
+          <div>
+            <h4 className="font-serif font-bold text-lg mb-6">Support</h4>
+            <ul className="space-y-3 text-sm text-muted-foreground">
+              <li><Link href="#" className="hover:text-primary transition-colors">Contact Us</Link></li>
+              <li><Link href="#" className="hover:text-primary transition-colors">FAQs</Link></li>
+              <li><Link href="#" className="hover:text-primary transition-colors">Shipping & Returns</Link></li>
+              <li><Link href="#" className="hover:text-primary transition-colors">Care Guide</Link></li>
+              <li><Link href="#" className="hover:text-primary transition-colors">Privacy Policy</Link></li>
+            </ul>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <h4 className="font-serif font-bold text-lg mb-6">Contact</h4>
+            <ul className="space-y-4 text-sm text-muted-foreground">
+              <li className="flex items-start gap-3">
+                <MapPin className="h-5 w-5 text-primary shrink-0" />
+                <span>123 Golden Avenue, Luxury District,<br />Lunawada, GJ 389230</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <Phone className="h-5 w-5 text-primary shrink-0" />
+                <span>+91 987 654 3210</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-muted-foreground">
+          <p>© 2024 Lunawada Furniture. All rights reserved.</p>
+          <div className="flex gap-6">
+            <Link href="#" className="hover:text-foreground">Terms</Link>
+            <Link href="#" className="hover:text-foreground">Privacy</Link>
+            <Link href="#" className="hover:text-foreground">Cookies</Link>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
