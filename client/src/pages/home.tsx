@@ -16,6 +16,11 @@ import royalSofa from "@assets/generated_images/royal_gold_velvet_sofa_set.png";
 import emeraldSofa from "@assets/generated_images/modern_emerald_velvet_sofa.png";
 import bossChair from "@assets/generated_images/executive_leather_boss_chair.png";
 import onyxDining from "@assets/generated_images/onyx_marble_dining_table_gold.png";
+import royalBed from "@assets/generated_images/modern_royal_bed_gold_inlay.png";
+import floatingBed from "@assets/generated_images/minimalist_floating_bed_suite.png";
+import velvetBed from "@assets/generated_images/velvet_tufted_designer_bed.png";
+import canopyBed from "@assets/generated_images/modern_canopy_bed_brass.png";
+import leatherBed from "@assets/generated_images/italian_leather_platform_bed.png";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -95,6 +100,41 @@ const luxuryProducts = [
     category: "Office",
     img: officeChair,
     tag: "Executive"
+  },
+  {
+    name: "Royal Gold Inlay Bed",
+    price: 225000,
+    category: "Bedroom",
+    img: royalBed,
+    tag: "Master"
+  },
+  {
+    name: "Zenith Floating Suite",
+    price: 185000,
+    category: "Bedroom",
+    img: floatingBed,
+    tag: "Modern"
+  },
+  {
+    name: "Midnight Velvet Grandeur",
+    price: 245000,
+    category: "Bedroom",
+    img: velvetBed,
+    tag: "Designer"
+  },
+  {
+    name: "Celestial Brass Canopy",
+    price: 215000,
+    category: "Bedroom",
+    img: canopyBed,
+    tag: "Luxury"
+  },
+  {
+    name: "Milano Leather Platform",
+    price: 195000,
+    category: "Bedroom",
+    img: leatherBed,
+    tag: "Italian"
   }
 ];
 
