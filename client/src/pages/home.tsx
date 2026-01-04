@@ -12,6 +12,10 @@ import officeChair from "@assets/generated_images/modern_office_chair_luxury.png
 import tijoriSafe from "@assets/generated_images/luxury_steel_tijori_safe.png";
 import customSofa from "@assets/generated_images/bespoke_customized_red_sofa.png";
 import lockerUnit from "@assets/generated_images/luxury_steel_locker_unit.png";
+import royalSofa from "@assets/generated_images/royal_gold_velvet_sofa_set.png";
+import emeraldSofa from "@assets/generated_images/modern_emerald_velvet_sofa.png";
+import bossChair from "@assets/generated_images/executive_leather_boss_chair.png";
+import onyxDining from "@assets/generated_images/onyx_marble_dining_table_gold.png";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -26,6 +30,73 @@ const staggerContainer = {
     }
   }
 };
+
+const formatPrice = (price: number) => {
+  return new Intl.NumberFormat('en-IN', {
+    style: 'currency',
+    currency: 'INR',
+    maximumFractionDigits: 0,
+  }).format(price);
+};
+
+const luxuryProducts = [
+  {
+    name: "Royal Gold Velvet Sofa Set",
+    price: 185000,
+    category: "Sofa",
+    img: royalSofa,
+    tag: "Royal"
+  },
+  {
+    name: "Emerald Curve Sectional",
+    price: 145000,
+    category: "Sofa",
+    img: emeraldSofa,
+    tag: "Modern"
+  },
+  {
+    name: "Executive Boss Series VII",
+    price: 45000,
+    category: "Office",
+    img: bossChair,
+    tag: "Premium"
+  },
+  {
+    name: "Onyx Gold Dining Ensemble",
+    price: 275000,
+    category: "Dining",
+    img: onyxDining,
+    tag: "Exclusive"
+  },
+  {
+    name: "Crimson Velvet Sectional",
+    price: 125000,
+    category: "Sofa",
+    img: customSofa,
+    tag: "Bespoke"
+  },
+  {
+    name: "Imperial Steel Tijori",
+    price: 85000,
+    category: "Security",
+    img: tijoriSafe,
+    tag: "High Security"
+  },
+  {
+    name: "Carrara Gold Dining Table",
+    price: 195000,
+    category: "Dining",
+    img: productTable,
+    tag: "Luxury"
+  },
+  {
+    name: "Director's Series Chair",
+    price: 38000,
+    category: "Office",
+    img: officeChair,
+    tag: "Executive"
+  }
+];
 
 export default function Home() {
   return (
@@ -106,45 +177,38 @@ export default function Home() {
         {/* Featured Products */}
         <section className="py-24 bg-secondary/10">
           <div className="container mx-auto px-4">
+            <div className="text-center mb-16 space-y-4">
+              <h2 className="font-serif text-4xl md:text-5xl font-medium">Signature Collection</h2>
+              <p className="text-muted-foreground">Premium selection of our most exclusive luxury pieces.</p>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {/* Product Card: Tijori */}
-              <motion.div variants={fadeIn} initial="initial" whileInView="animate" viewport={{ once: true }} className="group">
-                <div className="relative aspect-[3/4] overflow-hidden bg-white mb-4">
-                  <img src={tijoriSafe} alt="Premium Tijori" className="w-full h-full object-cover transition-transform group-hover:scale-110" />
-                  <div className="absolute top-4 left-4 bg-red-600 text-white text-[0.6rem] font-bold px-2 py-1 uppercase">High Security</div>
-                </div>
-                <h3 className="font-serif text-xl">Imperial Steel Tijori</h3>
-                <p className="text-muted-foreground text-sm">Advanced Locking System</p>
-              </motion.div>
-
-              {/* Product Card: Office Chair */}
-              <motion.div variants={fadeIn} initial="initial" whileInView="animate" viewport={{ once: true }} transition={{ delay: 0.1 }} className="group">
-                <div className="relative aspect-[3/4] overflow-hidden bg-white mb-4">
-                  <img src={officeChair} alt="Executive Chair" className="w-full h-full object-cover transition-transform group-hover:scale-110" />
-                  <div className="absolute top-4 left-4 bg-black text-white text-[0.6rem] font-bold px-2 py-1 uppercase">Executive</div>
-                </div>
-                <h3 className="font-serif text-xl">Director's Series Chair</h3>
-                <p className="text-muted-foreground text-sm">Ergonomic Excellence</p>
-              </motion.div>
-
-              {/* Product Card: Red Sofa */}
-              <motion.div variants={fadeIn} initial="initial" whileInView="animate" viewport={{ once: true }} transition={{ delay: 0.2 }} className="group">
-                <div className="relative aspect-[3/4] overflow-hidden bg-white mb-4">
-                  <img src={customSofa} alt="Bespoke Sofa" className="w-full h-full object-cover transition-transform group-hover:scale-110" />
-                  <div className="absolute top-4 left-4 bg-red-600 text-white text-[0.6rem] font-bold px-2 py-1 uppercase">Bespoke</div>
-                </div>
-                <h3 className="font-serif text-xl">Crimson Velvet Sectional</h3>
-                <p className="text-muted-foreground text-sm">Customized Dimensions</p>
-              </motion.div>
-
-              {/* Product Card: Lockers */}
-              <motion.div variants={fadeIn} initial="initial" whileInView="animate" viewport={{ once: true }} transition={{ delay: 0.3 }} className="group">
-                <div className="relative aspect-[3/4] overflow-hidden bg-white mb-4">
-                  <img src={lockerUnit} alt="Steel Locker" className="w-full h-full object-cover transition-transform group-hover:scale-110" />
-                </div>
-                <h3 className="font-serif text-xl">Industrial Steel Locker</h3>
-                <p className="text-muted-foreground text-sm">Durable Storage</p>
-              </motion.div>
+              {luxuryProducts.map((product, index) => (
+                <motion.div 
+                  key={index}
+                  variants={fadeIn} 
+                  initial="initial" 
+                  whileInView="animate" 
+                  viewport={{ once: true }} 
+                  transition={{ delay: index * 0.1 }} 
+                  className="group cursor-pointer"
+                >
+                  <div className="relative aspect-[3/4] overflow-hidden bg-white mb-4 shadow-sm">
+                    <img src={product.img} alt={product.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                    <div className="absolute top-4 left-4 bg-red-600 text-white text-[0.6rem] font-bold px-2 py-1 uppercase tracking-tighter">
+                      {product.tag}
+                    </div>
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300" />
+                    <Button className="absolute bottom-6 left-1/2 -translate-x-1/2 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 bg-white text-black hover:bg-white/90 min-w-[140px] shadow-lg rounded-none text-xs uppercase tracking-widest">
+                      View Details
+                    </Button>
+                  </div>
+                  <div className="space-y-1">
+                    <p className="text-[0.6rem] uppercase tracking-widest text-muted-foreground">{product.category}</p>
+                    <h3 className="font-serif text-xl group-hover:text-red-600 transition-colors leading-tight">{product.name}</h3>
+                    <p className="font-bold text-lg text-red-600">{formatPrice(product.price)}</p>
+                  </div>
+                </motion.div>
+              ))}
             </div>
           </div>
         </section>
