@@ -21,6 +21,16 @@ import floatingBed from "@assets/generated_images/minimalist_floating_bed_suite.
 import velvetBed from "@assets/generated_images/velvet_tufted_designer_bed.png";
 import canopyBed from "@assets/generated_images/modern_canopy_bed_brass.png";
 import leatherBed from "@assets/generated_images/italian_leather_platform_bed.png";
+import ivorySofa from "@assets/generated_images/modern_curved_velvet_sofa_ivory.png";
+import blackLeatherSofa from "@assets/generated_images/italian_leather_modular_sofa_black.png";
+import sapphireSofa from "@assets/generated_images/luxury_chesterfield_redefined_blue.png";
+import scandiSofa from "@assets/generated_images/scandinavian_minimalist_sofa_grey.png";
+import bubbleSofa from "@assets/generated_images/avant-garde_bubble_sofa_orange.png";
+import suedeSectional from "@assets/generated_images/luxury_l-shaped_suede_sofa_brown.png";
+import tuxedoSofa from "@assets/generated_images/modern_tuxedo_sofa_velvet_emerald.png";
+import shellSofa from "@assets/generated_images/art_deco_shell_sofa_pink.png";
+import theaterSofa from "@assets/generated_images/luxury_reclining_home_theater_sofa.png";
+import daybedSofa from "@assets/generated_images/modern_daybed_sofa_gold_frame.png";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -135,6 +145,76 @@ const luxuryProducts = [
     category: "Bedroom",
     img: leatherBed,
     tag: "Italian"
+  },
+  {
+    name: "Ivory Serpentine Curve",
+    price: 165000,
+    category: "Sofa",
+    img: ivorySofa,
+    tag: "Modern"
+  },
+  {
+    name: "Vogue Modular Leather",
+    price: 215000,
+    category: "Sofa",
+    img: blackLeatherSofa,
+    tag: "Italian"
+  },
+  {
+    name: "Sapphire Grand Chesterfield",
+    price: 175000,
+    category: "Sofa",
+    img: sapphireSofa,
+    tag: "Luxury"
+  },
+  {
+    name: "Nordic Oak Minimalist",
+    price: 125000,
+    category: "Sofa",
+    img: scandiSofa,
+    tag: "Scandi"
+  },
+  {
+    name: "Avant-Garde Bubble Seat",
+    price: 195000,
+    category: "Sofa",
+    img: bubbleSofa,
+    tag: "Unique"
+  },
+  {
+    name: "Chocolate Suede Sectional",
+    price: 235000,
+    category: "Sofa",
+    img: suedeSectional,
+    tag: "L-Shape"
+  },
+  {
+    name: "Emerald Tuxedo Series",
+    price: 145000,
+    category: "Sofa",
+    img: tuxedoSofa,
+    tag: "Hotel Luxe"
+  },
+  {
+    name: "Blush Shell Designer",
+    price: 135000,
+    category: "Sofa",
+    img: shellSofa,
+    tag: "Art Deco"
+  },
+  {
+    name: "Cine-Luxe 4-Seater Theater",
+    price: 285000,
+    category: "Sofa",
+    img: theaterSofa,
+    tag: "Home Cinema"
+  },
+  {
+    name: "Solaris Gold Daybed",
+    price: 115000,
+    category: "Sofa",
+    img: daybedSofa,
+    tag: "Minimalist"
   }
 ];
 
