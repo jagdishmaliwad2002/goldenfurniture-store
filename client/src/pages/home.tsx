@@ -43,6 +43,9 @@ import staffLocker from "@assets/generated_images/premium_office_staff_locker_sy
 import marbleTvUnit from "@assets/generated_images/modern_marble_led_tv_unit.png";
 import teakTvUnitDisplay from "@assets/generated_images/teak_ribbed_led_tv_console.png";
 import glassMediaCenter from "@assets/generated_images/contemporary_glass_led_media_center.png";
+import teakGlassDining from "@assets/generated_images/modern_glass_top_teak_dining_table.png";
+import walnutGlassDining from "@assets/generated_images/contemporary_walnut_glass_dining_set.png";
+import oakGlassDining from "@assets/generated_images/minimalist_oak_glass_dining_table.png";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -311,6 +314,27 @@ const luxuryProducts = [
     category: "Living",
     img: glassMediaCenter,
     tag: "Modern"
+  },
+  {
+    name: "Teak Crystal Dining Set",
+    price: 82000,
+    category: "Dining",
+    img: teakGlassDining,
+    tag: "Modern"
+  },
+  {
+    name: "Walnut Horizon Dining",
+    price: 115000,
+    category: "Dining",
+    img: walnutGlassDining,
+    tag: "Luxury"
+  },
+  {
+    name: "Nordic Glass Dining",
+    price: 68000,
+    category: "Dining",
+    img: oakGlassDining,
+    tag: "Minimalist"
   }
 ];
 
