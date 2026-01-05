@@ -40,6 +40,9 @@ import butterflyBed from "@assets/generated_images/modern_indian_butterfly_art_b
 import floralBed from "@assets/generated_images/contemporary_floral_indian_bed_design.png";
 import studentLocker from "@assets/generated_images/modern_school_student_locker_unit.png";
 import staffLocker from "@assets/generated_images/premium_office_staff_locker_system.png";
+import marbleTvUnit from "@assets/generated_images/modern_marble_led_tv_unit.png";
+import teakTvUnitDisplay from "@assets/generated_images/teak_ribbed_led_tv_console.png";
+import glassMediaCenter from "@assets/generated_images/contemporary_glass_led_media_center.png";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -287,6 +290,27 @@ const luxuryProducts = [
     category: "Storage",
     img: staffLocker,
     tag: "Corporate"
+  },
+  {
+    name: "Marble Aura LED Wall",
+    price: 88000,
+    category: "Living",
+    img: marbleTvUnit,
+    tag: "Luxury"
+  },
+  {
+    name: "Teak Ribbed Grand Console",
+    price: 95000,
+    category: "Living",
+    img: teakTvUnitDisplay,
+    tag: "Bespoke"
+  },
+  {
+    name: "Lumina Glass Media Suite",
+    price: 74000,
+    category: "Living",
+    img: glassMediaCenter,
+    tag: "Modern"
   }
 ];
 
