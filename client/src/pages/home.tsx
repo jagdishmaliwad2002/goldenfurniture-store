@@ -35,6 +35,7 @@ import premiumSectional from "@assets/generated_images/modern_grey_sectional_sof
 import blueWardrobe from "@assets/generated_images/luxury_blue_3-door_wardrobe_mirror.png";
 import tealTvUnit from "@assets/generated_images/modern_tv_unit_console_teal.png";
 import diamondBed from "@assets/generated_images/luxury_cream_diamond_tufted_bed.png";
+import taupeTijori from "@assets/generated_images/luxury_taupe_3-door_tijori_wardrobe.png";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -247,6 +248,13 @@ const luxuryProducts = [
     category: "Bedroom",
     img: diamondBed,
     tag: "Ultra Luxe"
+  },
+  {
+    name: "Heritage Taupe Tijori",
+    price: 92000,
+    category: "Storage",
+    img: taupeTijori,
+    tag: "Secure"
   }
 ];
 
