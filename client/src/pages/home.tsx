@@ -36,6 +36,8 @@ import blueWardrobe from "@assets/generated_images/luxury_blue_3-door_wardrobe_m
 import tealTvUnit from "@assets/generated_images/modern_tv_unit_console_teal.png";
 import diamondBed from "@assets/generated_images/luxury_cream_diamond_tufted_bed.png";
 import taupeTijori from "@assets/generated_images/luxury_taupe_3-door_tijori_wardrobe.png";
+import butterflyBed from "@assets/generated_images/modern_indian_butterfly_art_bed.png";
+import floralBed from "@assets/generated_images/contemporary_floral_indian_bed_design.png";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -255,6 +257,20 @@ const luxuryProducts = [
     category: "Storage",
     img: taupeTijori,
     tag: "Secure"
+  },
+  {
+    name: "Butterfly Art Master Suite",
+    price: 65000,
+    category: "Bedroom",
+    img: butterflyBed,
+    tag: "Artistic"
+  },
+  {
+    name: "Royal Floral Teak Bed",
+    price: 78000,
+    category: "Bedroom",
+    img: floralBed,
+    tag: "Classic"
   }
 ];
 
