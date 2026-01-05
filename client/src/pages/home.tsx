@@ -31,6 +31,10 @@ import tuxedoSofa from "@assets/generated_images/modern_tuxedo_sofa_velvet_emera
 import shellSofa from "@assets/generated_images/art_deco_shell_sofa_pink.png";
 import theaterSofa from "@assets/generated_images/luxury_reclining_home_theater_sofa.png";
 import daybedSofa from "@assets/generated_images/modern_daybed_sofa_gold_frame.png";
+import premiumSectional from "@assets/generated_images/modern_grey_sectional_sofa_premium.png";
+import blueWardrobe from "@assets/generated_images/luxury_blue_3-door_wardrobe_mirror.png";
+import tealTvUnit from "@assets/generated_images/modern_tv_unit_console_teal.png";
+import diamondBed from "@assets/generated_images/luxury_cream_diamond_tufted_bed.png";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -215,6 +219,34 @@ const luxuryProducts = [
     category: "Sofa",
     img: daybedSofa,
     tag: "Minimalist"
+  },
+  {
+    name: "Golden Comfort Sectional",
+    price: 168000,
+    category: "Sofa",
+    img: premiumSectional,
+    tag: "Signature"
+  },
+  {
+    name: "Imperial Blue Wardrobe",
+    price: 85000,
+    category: "Bedroom",
+    img: blueWardrobe,
+    tag: "New Arrival"
+  },
+  {
+    name: "Arcade Media Console",
+    price: 72000,
+    category: "Living",
+    img: tealTvUnit,
+    tag: "Modern"
+  },
+  {
+    name: "Diamond Wing Master Bed",
+    price: 285000,
+    category: "Bedroom",
+    img: diamondBed,
+    tag: "Ultra Luxe"
   }
 ];
 
