@@ -38,6 +38,8 @@ import diamondBed from "@assets/generated_images/luxury_cream_diamond_tufted_bed
 import taupeTijori from "@assets/generated_images/luxury_taupe_3-door_tijori_wardrobe.png";
 import butterflyBed from "@assets/generated_images/modern_indian_butterfly_art_bed.png";
 import floralBed from "@assets/generated_images/contemporary_floral_indian_bed_design.png";
+import studentLocker from "@assets/generated_images/modern_school_student_locker_unit.png";
+import staffLocker from "@assets/generated_images/premium_office_staff_locker_system.png";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -271,6 +273,20 @@ const luxuryProducts = [
     category: "Bedroom",
     img: floralBed,
     tag: "Classic"
+  },
+  {
+    name: "Academic 15-Door Locker",
+    price: 42000,
+    category: "Storage",
+    img: studentLocker,
+    tag: "School"
+  },
+  {
+    name: "Elite Office Staff Unit",
+    price: 38500,
+    category: "Storage",
+    img: staffLocker,
+    tag: "Corporate"
   }
 ];
 
