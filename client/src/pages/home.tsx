@@ -58,6 +58,7 @@ import kidsStudySet from "@assets/generated_images/kids_sky_blue_study_set.png";
 import cafeChairs from "@assets/generated_images/designer_plastic_cafe_chairs_set.png";
 import royalArmchairs from "@assets/generated_images/royal_high-back_armchair_collection.png";
 import executiveDesk from "@assets/generated_images/elite_walnut_professional_executive_desk.png";
+import waitingBench from "@assets/generated_images/professional_3-seater_airport_waiting_bench.png";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -431,6 +432,13 @@ const luxuryProducts = [
     category: "Office",
     img: executiveDesk,
     tag: "Professional"
+  },
+  {
+    name: "Terminal Cobalt 3-Seater",
+    price: 18500,
+    category: "Office",
+    img: waitingBench,
+    tag: "Commercial"
   }
 ];
 
