@@ -46,6 +46,9 @@ import glassMediaCenter from "@assets/generated_images/contemporary_glass_led_me
 import teakGlassDining from "@assets/generated_images/modern_glass_top_teak_dining_table.png";
 import walnutGlassDining from "@assets/generated_images/contemporary_walnut_glass_dining_set.png";
 import oakGlassDining from "@assets/generated_images/minimalist_oak_glass_dining_table.png";
+import blueTijori from "@assets/generated_images/elite_blue_deluxe_tijori_wardrobe.png";
+import fiveDoorTijori from "@assets/generated_images/modern_5-door_dressing_tijori_suite.png";
+import sideDressingTijori from "@assets/generated_images/side_dressing_professional_cupboard.png";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -335,6 +338,27 @@ const luxuryProducts = [
     category: "Dining",
     img: oakGlassDining,
     tag: "Minimalist"
+  },
+  {
+    name: "Elite Blue Deluxe Tijori",
+    price: 54000,
+    category: "Storage",
+    img: blueTijori,
+    tag: "Security"
+  },
+  {
+    name: "Grand 5-Door Dressing Suite",
+    price: 62000,
+    category: "Storage",
+    img: fiveDoorTijori,
+    tag: "Premium"
+  },
+  {
+    name: "Professional Side Dressing Unit",
+    price: 48000,
+    category: "Storage",
+    img: sideDressingTijori,
+    tag: "Versatile"
   }
 ];
 
