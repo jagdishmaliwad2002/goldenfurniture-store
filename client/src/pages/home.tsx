@@ -49,6 +49,11 @@ import oakGlassDining from "@assets/generated_images/minimalist_oak_glass_dining
 import blueTijori from "@assets/generated_images/elite_blue_deluxe_tijori_wardrobe.png";
 import fiveDoorTijori from "@assets/generated_images/modern_5-door_dressing_tijori_suite.png";
 import sideDressingTijori from "@assets/generated_images/side_dressing_professional_cupboard.png";
+import diamondChair from "@assets/generated_images/executive_diamond_stitched_office_chair.png";
+import walnutChair from "@assets/generated_images/imperial_walnut_leather_executive_chair.png";
+import vaticanChair from "@assets/generated_images/vatican_tan_leather_throne_chair.png";
+import terracottaChair from "@assets/generated_images/royal_terracotta_ergonomic_office_chair.png";
+import shoeCabinet from "@assets/generated_images/bespoke_walnut_shoe_storage_cabinet.png";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -359,6 +364,41 @@ const luxuryProducts = [
     category: "Storage",
     img: sideDressingTijori,
     tag: "Versatile"
+  },
+  {
+    name: "Diamond Executive Throne",
+    price: 24500,
+    category: "Office",
+    img: diamondChair,
+    tag: "Ergonomic"
+  },
+  {
+    name: "Imperial Walnut Manager Chair",
+    price: 28000,
+    category: "Office",
+    img: walnutChair,
+    tag: "Premium"
+  },
+  {
+    name: "Vatican Tan Sovereign",
+    price: 32000,
+    category: "Office",
+    img: vaticanChair,
+    tag: "Luxury"
+  },
+  {
+    name: "Royal Terracotta Task Chair",
+    price: 21000,
+    category: "Office",
+    img: terracottaChair,
+    tag: "Modern"
+  },
+  {
+    name: "Bespoke Walnut Shoe Gallery",
+    price: 18500,
+    category: "Storage",
+    img: shoeCabinet,
+    tag: "Essential"
   }
 ];
 
