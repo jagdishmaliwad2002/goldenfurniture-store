@@ -59,6 +59,7 @@ import cafeChairs from "@assets/generated_images/designer_plastic_cafe_chairs_se
 import royalArmchairs from "@assets/generated_images/royal_high-back_armchair_collection.png";
 import executiveDesk from "@assets/generated_images/elite_walnut_professional_executive_desk.png";
 import waitingBench from "@assets/generated_images/professional_3-seater_airport_waiting_bench.png";
+import dualShoeCabinet from "@assets/generated_images/dual-mode_walnut_shoe_cabinet_display.png";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -439,6 +440,13 @@ const luxuryProducts = [
     category: "Office",
     img: waitingBench,
     tag: "Commercial"
+  },
+  {
+    name: "Zenith Dual Shoe Suite",
+    price: 22500,
+    category: "Storage",
+    img: dualShoeCabinet,
+    tag: "Minimalist"
   }
 ];
 
