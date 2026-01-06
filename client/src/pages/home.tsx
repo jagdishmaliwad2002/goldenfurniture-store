@@ -54,6 +54,9 @@ import walnutChair from "@assets/generated_images/imperial_walnut_leather_execut
 import vaticanChair from "@assets/generated_images/vatican_tan_leather_throne_chair.png";
 import terracottaChair from "@assets/generated_images/royal_terracotta_ergonomic_office_chair.png";
 import shoeCabinet from "@assets/generated_images/bespoke_walnut_shoe_storage_cabinet.png";
+import kidsStudySet from "@assets/generated_images/kids_sky_blue_study_set.png";
+import cafeChairs from "@assets/generated_images/designer_plastic_cafe_chairs_set.png";
+import royalArmchairs from "@assets/generated_images/royal_high-back_armchair_collection.png";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -399,6 +402,27 @@ const luxuryProducts = [
     category: "Storage",
     img: shoeCabinet,
     tag: "Essential"
+  },
+  {
+    name: "Junior Sky Activity Set",
+    price: 4500,
+    category: "Kids",
+    img: kidsStudySet,
+    tag: "Playful"
+  },
+  {
+    name: "Vivid Palette Cafe Trio",
+    price: 2800,
+    category: "Seating",
+    img: cafeChairs,
+    tag: "Modern"
+  },
+  {
+    name: "Royal Woven High-Back",
+    price: 3200,
+    category: "Seating",
+    img: royalArmchairs,
+    tag: "Comfort"
   }
 ];
 
