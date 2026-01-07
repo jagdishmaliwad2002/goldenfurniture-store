@@ -544,8 +544,12 @@ export default function Home() {
                   transition={{ delay: index * 0.1 }} 
                   className="group cursor-pointer"
                 >
-                  <div className="relative aspect-[3/4] overflow-hidden bg-white mb-4 shadow-sm">
-                    <img src={product.img} alt={product.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                  <div className="relative aspect-[3/4] overflow-hidden bg-white mb-4 shadow-sm group">
+                    <img 
+                      src={product.img} 
+                      alt={product.name} 
+                      className="w-full h-full object-contain p-2 transition-transform duration-700 group-hover:scale-110" 
+                    />
                     <div className="absolute top-4 left-4 bg-red-600 text-white text-[0.6rem] font-bold px-2 py-1 uppercase tracking-tighter">
                       {product.tag}
                     </div>
