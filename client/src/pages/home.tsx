@@ -67,6 +67,11 @@ import codingChair from "@assets/generated_images/zenith_coding_ergonomic_chair.
 import engineerChair from "@assets/generated_images/titan_engineer_heavy-duty_chair.png";
 import libernovoStealth from "@assets/generated_images/libernovo_elite_stealth_gaming_chair.png";
 import cyberNexusChair from "@assets/generated_images/cyber-nexus_engineering_suite_seat.png";
+import standingDesk from "@assets/generated_images/dual-motor_electric_sit-stand_desk.png";
+import wfhDesk from "@assets/generated_images/zenith_minimalist_work-from-home_desk.png";
+import foldingDesk from "@assets/generated_images/compact_foldable_home_office_desk.png";
+import glassDesk from "@assets/generated_images/lumina_glass_top_executive_work_desk.png";
+import floatingDesk from "@assets/generated_images/bespoke_walnut_floating_workspace_desk.png";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -503,6 +508,41 @@ const luxuryProducts = [
     category: "Office",
     img: cyberNexusChair,
     tag: "Tech"
+  },
+  {
+    name: "Aura Electric Sit-Stand Desk",
+    price: 48500,
+    category: "Office",
+    img: standingDesk,
+    tag: "Adjustable"
+  },
+  {
+    name: "Zenith Minimalist WFH Desk",
+    price: 22000,
+    category: "Office",
+    img: wfhDesk,
+    tag: "Essential"
+  },
+  {
+    name: "Space-Saver Foldable Desk",
+    price: 12500,
+    category: "Office",
+    img: foldingDesk,
+    tag: "Compact"
+  },
+  {
+    name: "Lumina Smoked Glass Desk",
+    price: 54000,
+    category: "Office",
+    img: glassDesk,
+    tag: "Luxury"
+  },
+  {
+    name: "Walnut Floating Workspace",
+    price: 38000,
+    category: "Office",
+    img: floatingDesk,
+    tag: "Modern"
   }
 ];
 
