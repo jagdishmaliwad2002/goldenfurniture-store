@@ -60,6 +60,8 @@ import royalArmchairs from "@assets/generated_images/royal_high-back_armchair_co
 import executiveDesk from "@assets/generated_images/elite_walnut_professional_executive_desk.png";
 import waitingBench from "@assets/generated_images/professional_3-seater_airport_waiting_bench.png";
 import dualShoeCabinet from "@assets/generated_images/dual-mode_walnut_shoe_cabinet_display.png";
+import walnutMediaSuite from "@assets/generated_images/modern_walnut_led_media_suite.png";
+import scandiTvUnit from "@assets/generated_images/scandinavian_oak_led_tv_unit.png";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -447,6 +449,20 @@ const luxuryProducts = [
     category: "Storage",
     img: dualShoeCabinet,
     tag: "Minimalist"
+  },
+  {
+    name: "Walnut Horizon Media Suite",
+    price: 92000,
+    category: "Living",
+    img: walnutMediaSuite,
+    tag: "Premium"
+  },
+  {
+    name: "Nordic Slatted TV Wall",
+    price: 78500,
+    category: "Living",
+    img: scandiTvUnit,
+    tag: "Modern"
   }
 ];
 
