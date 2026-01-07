@@ -62,6 +62,11 @@ import waitingBench from "@assets/generated_images/professional_3-seater_airport
 import dualShoeCabinet from "@assets/generated_images/dual-mode_walnut_shoe_cabinet_display.png";
 import walnutMediaSuite from "@assets/generated_images/modern_walnut_led_media_suite.png";
 import scandiTvUnit from "@assets/generated_images/scandinavian_oak_led_tv_unit.png";
+import libernovoGaming from "@assets/generated_images/libernovo_pro_gaming_throne.png";
+import codingChair from "@assets/generated_images/zenith_coding_ergonomic_chair.png";
+import engineerChair from "@assets/generated_images/titan_engineer_heavy-duty_chair.png";
+import libernovoStealth from "@assets/generated_images/libernovo_elite_stealth_gaming_chair.png";
+import cyberNexusChair from "@assets/generated_images/cyber-nexus_engineering_suite_seat.png";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -463,6 +468,41 @@ const luxuryProducts = [
     category: "Living",
     img: scandiTvUnit,
     tag: "Modern"
+  },
+  {
+    name: "Libernovo Pro Gaming Throne",
+    price: 32500,
+    category: "Office",
+    img: libernovoGaming,
+    tag: "Gaming"
+  },
+  {
+    name: "Zenith Coding Ergonomic",
+    price: 28500,
+    category: "Office",
+    img: codingChair,
+    tag: "Coding"
+  },
+  {
+    name: "Titan Engineer Heavy-Duty",
+    price: 34000,
+    category: "Office",
+    img: engineerChair,
+    tag: "Engineering"
+  },
+  {
+    name: "Libernovo Elite Stealth",
+    price: 38000,
+    category: "Office",
+    img: libernovoStealth,
+    tag: "Pro Gaming"
+  },
+  {
+    name: "Cyber-Nexus Suite Seat",
+    price: 26500,
+    category: "Office",
+    img: cyberNexusChair,
+    tag: "Tech"
   }
 ];
 
