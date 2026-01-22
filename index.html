@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ગોલ્ડન ફર્નિચર | GOLDEN FURNITURE</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary: #f8f5f2;
+        --secondary: #e8e3de;
+        --accent-dark: #2a2a2a;
+        --accent-red: #d32f2f;
+        --accent-red-light: #ef5350;
+        --accent-red-dark: #b71c1c;
+        --text-dark: #333333;
+        --text-light: #777777;
+        --glass-bg: rgba(255, 255, 255, 0.2);
+        --glass-border: rgba(255, 255, 255, 0.3);
+        --red-glass-bg: rgba(211, 47, 47, 0.15);
+        --red-glass-border: rgba(211, 47, 47, 0.3);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        color: var(--text-dark);
+        background-color: var(--primary);
+        overflow-x: hidden;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        font-family: 'Playfair Display', serif;
+        font-weight: 600;
+      }
+
+      .gujarati-font {
+        font-family: 'Noto Sans Gujarati', sans-serif;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      /* Developer Credit */
+      .developer-credit {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1001;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 8px 16px;
+        border-radius: 20px;
+        background: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        animation: rgbGlow 3s infinite alternate;
+      }
+
+      .developer-credit span {
+        background: linear-gradient(
+          90deg,
+          #ff0000,
+          #ff8000,
+          #ffff00,
+          #00ff00,
+          #00ffff,
+          #0000ff,
+          #8000ff,
+          #ff00ff
+        );
+        background-size: 400% 400%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: rgbText 4s ease infinite;
+        font-weight: 700;
+      }
+
+      @keyframes rgbText {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      @keyframes rgbGlow {
+        0% {
+          box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+        }
+        14% {
+          box-shadow: 0 0 10px rgba(255, 128, 0, 0.7);
+        }
+        28% {
+          box-shadow: 0 0 10px rgba(255, 255, 0, 0.7);
+        }
+        42% {
+          box-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
+        }
+        57% {
+          box-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+        }
+        71% {
+          box-shadow: 0 0 10px rgba(0, 0, 255, 0.7);
+        }
+        85% {
+          box-shadow: 0 0 10px rgba(128, 0, 255, 0.7);
+        }
+        100% {
+          box-shadow: 0 0 10px rgba(255, 0, 255, 0.7);
+        }
+      }
+
+      /* Header Styles */
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        transition: all 0.3s ease;
+        background: var(--red-glass-bg);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+      }
+
+      .logo-container {
+        display: flex;
+        align-items: center;
+      }
+
+      .logo {
+        font-family: 'Noto Sans Gujarati', sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+        color: var(--accent-red);
+        text-decoration: none;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .nav-links {
+        display: flex;
+        list-style: none;
+      }
+
+      .nav-links li {
+        margin-left: 30px;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: var(--accent-dark);
+        font-weight: 500;
+        transition: color 0.3s ease;
+      }
+
+      .nav-links a:hover {
+        color: var(--accent-red);
+      }
+
+      .nav-icons {
+        display: flex;
+        align-items: center;
+      }
+
+      .nav-icons a {
+        color: var(--accent-dark);
+        margin-left: 20px;
+        font-size: 18px;
+        transition: color 0.3s ease;
+      }
+
+      .nav-icons a:hover {
+        color: var(--accent-red);
+      }
+
+      .menu-toggle {
+        display: none;
+        cursor: pointer;
+        font-size: 24px;
+      }
+
+      /* Hero Section with Slider */
+      .hero {
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+        margin-top: 80px;
+      }
+
+      .hero-slider {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .slider-track {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.8s ease;
+      }
+
+      .slider-slide {
+        min-width: 100%;
+        height: 100%;
+        position: relative;
+      }
+
+      .slider-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .slide-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+      }
+
+      .hero-content {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translateY(-50%);
+        z-index: 2;
+        width: 100%;
+        max-width: 600px;
+      }
+
+      .glass-panel {
+        background: var(--red-glass-bg);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid var(--red-glass-border);
+        border-radius: 15px;
+        padding: 40px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      .hero h1 {
+        font-size: 3.5rem;
+        line-height: 1.2;
+        margin-bottom: 20px;
+        color: var(--primary);
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        color: var(--primary);
+        opacity: 0.9;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 12px 30px;
+        background: var(--accent-red);
+        color: var(--primary);
+        border: none;
+        border-radius: 30px;
+        font-weight: 500;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        background: var(--accent-red-dark);
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .btn-outline {
+        background: transparent;
+        border: 2px solid var(--primary);
+        margin-left: 15px;
+      }
+
+      .btn-outline:hover {
+        background: var(--primary);
+        color: var(--accent-red);
+      }
+
+      .slider-nav {
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 10px;
+        z-index: 3;
+      }
+
+      .slider-dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.5);
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      .slider-dot.active {
+        background: white;
+      }
+
+      .slider-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: var(--red-glass-bg);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid var(--red-glass-border);
+        color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 3;
+        transition: all 0.3s ease;
+      }
+
+      .slider-arrow:hover {
+        background: var(--accent-red);
+      }
+
+      .slider-arrow.prev {
+        left: 30px;
+      }
+
+      .slider-arrow.next {
+        right: 30px;
+      }
+
+      /* Products Section */
+      .section {
+        padding: 100px 0;
+      }
+
+      .section-title {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+
+      .section-title h2 {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+        color: var(--accent-red);
+      }
+
+      .section-title p {
+        color: var(--text-light);
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .categories-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+      }
+
+      .category-card {
+        position: relative;
+        height: 400px;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+      }
+
+      .category-card:hover {
+        transform: translateY(-10px);
+      }
+
+      .category-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+
+      .category-card:hover .category-img {
+        transform: scale(1.05);
+      }
+
+      .category-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 30px;
+        background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+        color: white;
+      }
+
+      .category-content h3 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+      }
+
+      /* Spring Collection */
+      .spring-collection {
+        background-color: var(--secondary);
+        position: relative;
+      }
+
+      .collection-container {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+      }
+
+      .collection-content {
+        flex: 1;
+      }
+
+      .collection-content h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: var(--accent-red);
+      }
+
+      .collection-content p {
+        margin-bottom: 30px;
+        color: var(--text-light);
+        line-height: 1.6;
+      }
+
+      .collection-slider {
+        flex: 1;
+        position: relative;
+      }
+
+      .collection-slider-container {
+        display: flex;
+        overflow: hidden;
+        border-radius: 15px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      .collection-slider-track {
+        display: flex;
+        transition: transform 0.5s ease;
+      }
+
+      .collection-slider-slide {
+        min-width: 100%;
+        height: 400px;
+      }
+
+      .collection-slider-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .collection-slider-nav {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 10px;
+      }
+
+      .collection-slider-dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.5);
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      .collection-slider-dot.active {
+        background: white;
+      }
+
+      /* Features Section */
+      .features-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+      }
+
+      .feature-card {
+        background: var(--red-glass-bg);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid var(--red-glass-border);
+        border-radius: 15px;
+        padding: 40px 30px;
+        text-align: center;
+        transition: all 0.3s ease;
+      }
+
+      .feature-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      .feature-icon {
+        font-size: 2.5rem;
+        color: var(--accent-red);
+        margin-bottom: 20px;
+      }
+
+      .feature-card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+      }
+
+      .feature-card p {
+        color: var(--text-light);
+      }
+
+      /* Reviews Section */
+      .reviews-section {
+        background-color: var(--secondary);
+      }
+
+      .reviews-container {
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+
+      .reviews-track {
+        display: flex;
+        transition: transform 0.5s ease;
+      }
+
+      .review-card {
+        min-width: 100%;
+        padding: 40px;
+        background: var(--red-glass-bg);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid var(--red-glass-border);
+        border-radius: 15px;
+        text-align: center;
+      }
+
+      .review-stars {
+        color: var(--accent-red);
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+      }
+
+      .review-text {
+        font-style: italic;
+        margin-bottom: 20px;
+        line-height: 1.6;
+      }
+
+      .review-author {
+        font-weight: 600;
+      }
+
+      .review-nav {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        gap: 10px;
+      }
+
+      .review-dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: rgba(42, 42, 42, 0.3);
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      .review-dot.active {
+        background: var(--accent-red);
+      }
+
+      /* Footer */
+      footer {
+        background-color: var(--accent-dark);
+        color: var(--primary);
+        padding: 80px 0 30px;
+      }
+
+      .footer-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1.5fr;
+        gap: 40px;
+        margin-bottom: 50px;
+      }
+
+      .footer-logo {
+        font-family: 'Noto Sans Gujarati', sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: var(--accent-red);
+      }
+
+      .footer-about p {
+        margin-bottom: 20px;
+        line-height: 1.6;
+        opacity: 0.8;
+      }
+
+      .footer-links h3,
+      .footer-contact h3,
+      .footer-newsletter h3 {
+        font-size: 1.2rem;
+        margin-bottom: 25px;
+        position: relative;
+        color: var(--accent-red);
+      }
+
+      .footer-links h3:after,
+      .footer-contact h3:after,
+      .footer-newsletter h3:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        width: 40px;
+        height: 2px;
+        background: var(--accent-red);
+      }
+
+      .footer-links ul {
+        list-style: none;
+      }
+
+      .footer-links li {
+        margin-bottom: 12px;
+      }
+
+      .footer-links a {
+        color: var(--primary);
+        text-decoration: none;
+        opacity: 0.8;
+        transition: opacity 0.3s ease;
+      }
+
+      .footer-links a:hover {
+        opacity: 1;
+        color: var(--accent-red-light);
+      }
+
+      .footer-contact p {
+        margin-bottom: 15px;
+        opacity: 0.8;
+        display: flex;
+        align-items: flex-start;
+      }
+
+      .footer-contact i {
+        margin-right: 10px;
+        color: var(--accent-red);
+      }
+
+      .footer-newsletter p {
+        margin-bottom: 20px;
+        opacity: 0.8;
+      }
+
+      .newsletter-form {
+        display: flex;
+      }
+
+      .newsletter-input {
+        flex: 1;
+        padding: 12px 15px;
+        border: none;
+        border-radius: 30px 0 0 30px;
+        outline: none;
+      }
+
+      .newsletter-btn {
+        padding: 0 20px;
+        background: var(--accent-red);
+        color: var(--primary);
+        border: none;
+        border-radius: 0 30px 30px 0;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      .newsletter-btn:hover {
+        background: var(--accent-red-dark);
+      }
+
+      .social-icons a {
+        color: var(--primary);
+        margin-right: 15px;
+        font-size: 1.2rem;
+        transition: color 0.3s ease;
+      }
+
+      .social-icons a:hover {
+        color: var(--accent-red);
+      }
+
+      .footer-bottom {
+        text-align: center;
+        padding-top: 30px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        opacity: 0.7;
+      }
+
+      /* Responsive Styles */
+      @media (max-width: 992px) {
+        .categories-grid,
+        .features-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .collection-container {
+          flex-direction: column;
+        }
+
+        .footer-content {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .hero h1 {
+          font-size: 2.8rem;
+        }
+
+        .logo {
+          font-size: 28px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .menu-toggle {
+          display: block;
+        }
+
+        .nav-links {
+          position: fixed;
+          top: 80px;
+          left: 0;
+          width: 100%;
+          background: var(--red-glass-bg);
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+          flex-direction: column;
+          align-items: center;
+          padding: 20px 0;
+          transform: translateY(-100%);
+          opacity: 0;
+          transition: all 0.3s ease;
+          z-index: 999;
+        }
+
+        .nav-links.active {
+          transform: translateY(0);
+          opacity: 1;
+        }
+
+        .nav-links li {
+          margin: 15px 0;
+        }
+
+        .hero h1 {
+          font-size: 2.2rem;
+        }
+
+        .categories-grid,
+        .features-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .footer-content {
+          grid-template-columns: 1fr;
+        }
+
+        .slider-arrow {
+          width: 40px;
+          height: 40px;
+        }
+
+        .slider-arrow.prev {
+          left: 15px;
+        }
+
+        .slider-arrow.next {
+          right: 15px;
+        }
+
+        .logo {
+          font-size: 24px;
+        }
+
+        .developer-credit {
+          bottom: 10px;
+          right: 10px;
+          font-size: 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Developer Credit -->
+    <div class="developer-credit">
+      Developed by <span>Jagdish Maliwad</span>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo-container">
+            <a href="#" class="logo">ગોલ્ડન ફર્નિચર</a>
+          </div>
+
+          <ul class="nav-links">
+            <li><a href="#">હોમ</a></li>
+            <li><a href="#">શોપ</a></li>
+            <li><a href="#">કલેક્શન</a></li>
+            <li><a href="#">ઇન્સ્પિરેશન</a></li>
+            <li><a href="#">અમારા વિશે</a></li>
+            <li><a href="#">સંપર્ક કરો</a></li>
+          </ul>
+
+          <div class="nav-icons">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fas fa-user"></i></a>
+            <a href="#"><i class="fas fa-shopping-bag"></i></a>
+          </div>
+
+          <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section with Slider -->
+    <section class="hero">
+      <div class="hero-slider">
+        <div class="slider-track">
+          <!-- Dining Table Images -->
+          <div class="slider-slide">
+            <img
+              src="https://images.unsplash.com/photo-1556912167-f556f1f39fdf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
+              alt="Dining Table 1"
+            />
+            <div class="slide-overlay"></div>
+          </div>
+          <div class="slider-slide">
+            <img
+              src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1758&q=80"
+              alt="Dining Table 2"
+            />
+            <div class="slide-overlay"></div>
+          </div>
+
+          <!-- Sofa Images -->
+          <div class="slider-slide">
+            <img
+              src="https://images.unsplash.com/photo-1540574163026-643ea20ade25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
+              alt="Sofa 1"
+            />
+            <div class="slide-overlay"></div>
+          </div>
+          <div class="slider-slide">
+            <img
+              src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1758&q=80"
+              alt="Sofa 2"
+            />
+            <div class="slide-overlay"></div>
+          </div>
+
+          <!-- Bedroom Images -->
+          <div class="slider-slide">
+            <img
+              src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
+              alt="Bedroom 1"
+            />
+            <div class="slide-overlay"></div>
+          </div>
+          <div class="slider-slide">
+            <img
+              src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1758&q=80"
+              alt="Bedroom 2"
+            />
+            <div class="slide-overlay"></div>
+          </div>
+
+          <!-- Additional Furniture Images -->
+          <div class="slider-slide">
+            <img
+              src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+              alt="Furniture 1"
+            />
+            <div class="slide-overlay"></div>
+          </div>
+          <div class="slider-slide">
+            <img
+              src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+              alt="Furniture 2"
+            />
+            <div class="slide-overlay"></div>
+          </div>
+        </div>
+
+        <!-- Slider Navigation -->
+        <div class="slider-arrow prev">
+          <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="slider-arrow next">
+          <i class="fas fa-chevron-right"></i>
+        </div>
+
+        <div class="slider-nav">
+          <div class="slider-dot active"></div>
+          <div class="slider-dot"></div>
+          <div class="slider-dot"></div>
+          <div class="slider-dot"></div>
+          <div class="slider-dot"></div>
+          <div class="slider-dot"></div>
+          <div class="slider-dot"></div>
+          <div class="slider-dot"></div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="hero-content">
+          <div class="glass-panel">
+            <h1>Crafting Timeless Elegance for Your Home</h1>
+            <p>
+              Experience the perfect blend of style and comfort with our premium
+              furniture collection.
+            </p>
+            <a href="#" class="btn">Shop the Spring Collection</a>
+            <a href="#" class="btn btn-outline">Find Inspiration</a>
+            <p style="margin-top: 20px; font-size: 0.9rem">
+              <i class="fas fa-truck"></i> Free & Same-Day Delivery Available
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Find Your Inspiration</h2>
+          <p>
+            Discover furniture that transforms your space and reflects your
+            unique style
+          </p>
+        </div>
+
+        <div class="categories-grid">
+          <div class="category-card">
+            <img
+              src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1758&q=80"
+              alt="Living Room"
+              class="category-img"
+            />
+            <div class="category-content">
+              <h3>Living Room</h3>
+              <a href="#" class="btn btn-outline">Shop Now</a>
+            </div>
+          </div>
+
+          <div class="category-card">
+            <img
+              src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
+              alt="Bedroom"
+              class="category-img"
+            />
+            <div class="category-content">
+              <h3>Bedroom</h3>
+              <a href="#" class="btn btn-outline">Shop Now</a>
+            </div>
+          </div>
+
+          <div class="category-card">
+            <img
+              src="https://images.unsplash.com/photo-1556912167-f556f1f39fdf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
+              alt="Dining"
+              class="category-img"
+            />
+            <div class="category-content">
+              <h3>Dining</h3>
+              <a href="#" class="btn btn-outline">Shop Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Spring Collection -->
+    <section class="section spring-collection">
+      <div class="container">
+        <div class="collection-container">
+          <div class="collection-content">
+            <h2>The New Spring Collection</h2>
+            <p>
+              Bring freshness and light into your home with our latest designs
+              inspired by the beauty of spring. Featuring light woods, soft
+              fabrics, and elegant silhouettes.
+            </p>
+            <a href="#" class="btn">Explore Collection</a>
+          </div>
+
+          <div class="collection-slider">
+            <div class="collection-slider-container">
+              <div class="collection-slider-track">
+                <div class="collection-slider-slide">
+                  <img
+                    src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
+                    alt="Spring Collection 1"
+                  />
+                </div>
+                <div class="collection-slider-slide">
+                  <img
+                    src="https://images.unsplash.com/photo-1540574163026-643ea20ade25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
+                    alt="Spring Collection 2"
+                  />
+                </div>
+                <div class="collection-slider-slide">
+                  <img
+                    src="https://images.unsplash.com/photo-1519643381401-22c77e60520e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
+                    alt="Spring Collection 3"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="collection-slider-nav">
+              <div class="collection-slider-dot active"></div>
+              <div class="collection-slider-dot"></div>
+              <div class="collection-slider-dot"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section">
+      <div class="container">
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-truck"></i>
+            </div>
+            <h3>Same-Day Delivery</h3>
+            <p>
+              Order by 12pm, get your furniture delivered the same day. Free
+              delivery on orders above ₹10,000.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-star"></i>
+            </div>
+            <h3>Premium Quality</h3>
+            <p>
+              Crafted with the finest materials and attention to detail for
+              furniture that lasts generations.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-comments"></i>
+            </div>
+            <h3>Expert Support</h3>
+            <p>
+              Our design experts are here to help you create the perfect space
+              for your home.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Elfsight Google Reviews | Untitled Google Reviews -->
+    <script src="https://elfsightcdn.com/platform.js" async></script>
+    <div
+      class="elfsight-app-d7de414e-2430-483f-8ce0-dd25102f7699"
+      data-elfsight-app-lazy
+    ></div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-about">
+            <div class="footer-logo">ગોલ્ડન ફર્નિચર</div>
+            <p>
+              Crafting timeless furniture pieces that bring elegance and comfort
+              to your home since 2010. Visit our store in Lunawada, Gujarat.
+            </p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-pinterest"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Collections</a></li>
+              <li><a href="#">Inspiration</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Modasa Road, opposite SBI
+              Bank, Lunawada, Gujarat 389230
+            </p>
+            <p><i class="fas fa-phone"></i> 097372 17844</p>
+            <p><i class="fas fa-envelope"></i> info@goldenfurniture.com</p>
+            <p><i class="fas fa-clock"></i> Closed ⋅ Opens 9:15 am Mon</p>
+          </div>
+
+          <div class="footer-newsletter">
+            <h3>Newsletter</h3>
+            <p>
+              Subscribe to get updates on new collections and exclusive offers.
+            </p>
+            <form class="newsletter-form">
+              <input
+                type="email"
+                placeholder="Your email address"
+                class="newsletter-input"
+              />
+              <button type="submit" class="newsletter-btn">
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 GOLDEN FURNITURE. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navLinks = document.querySelector('.nav-links');
+
+      menuToggle.addEventListener('click', function () {
+        navLinks.classList.toggle('active');
+      });
+
+      // Hero Slider
+      const heroSliderTrack = document.querySelector('.hero .slider-track');
+      const heroSlides = document.querySelectorAll('.hero .slider-slide');
+      const heroDots = document.querySelectorAll('.hero .slider-dot');
+      const prevArrow = document.querySelector('.hero .slider-arrow.prev');
+      const nextArrow = document.querySelector('.hero .slider-arrow.next');
+      let currentHeroSlide = 0;
+      let heroSlideInterval;
+
+      function goToHeroSlide(slideIndex) {
+        heroSliderTrack.style.transform = `translateX(-${slideIndex * 100}%)`;
+
+        // Update active dot
+        heroDots.forEach((dot) => dot.classList.remove('active'));
+        heroDots[slideIndex].classList.add('active');
+
+        currentHeroSlide = slideIndex;
+      }
+
+      function nextHeroSlide() {
+        currentHeroSlide = (currentHeroSlide + 1) % heroSlides.length;
+        goToHeroSlide(currentHeroSlide);
+      }
+
+      function prevHeroSlide() {
+        currentHeroSlide =
+          (currentHeroSlide - 1 + heroSlides.length) % heroSlides.length;
+        goToHeroSlide(currentHeroSlide);
+      }
+
+      // Add click events to dots
+      heroDots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+          goToHeroSlide(index);
+          resetHeroInterval();
+        });
+      });
+
+      // Add click events to arrows
+      nextArrow.addEventListener('click', () => {
+        nextHeroSlide();
+        resetHeroInterval();
+      });
+
+      prevArrow.addEventListener('click', () => {
+        prevHeroSlide();
+        resetHeroInterval();
+      });
+
+      function startHeroInterval() {
+        heroSlideInterval = setInterval(nextHeroSlide, 5000);
+      }
+
+      function resetHeroInterval() {
+        clearInterval(heroSlideInterval);
+        startHeroInterval();
+      }
+
+      // Start the hero slider
+      startHeroInterval();
+
+      // Collection Slider
+      const collectionSliderTrack = document.querySelector(
+        '.collection-slider-track'
+      );
+      const collectionSlides = document.querySelectorAll(
+        '.collection-slider-slide'
+      );
+      const collectionDots = document.querySelectorAll(
+        '.collection-slider-dot'
+      );
+      let currentCollectionSlide = 0;
+
+      function goToCollectionSlide(slideIndex) {
+        collectionSliderTrack.style.transform = `translateX(-${
+          slideIndex * 100
+        }%)`;
+
+        // Update active dot
+        collectionDots.forEach((dot) => dot.classList.remove('active'));
+        collectionDots[slideIndex].classList.add('active');
+
+        currentCollectionSlide = slideIndex;
+      }
+
+      // Add click events to collection dots
+      collectionDots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+          goToCollectionSlide(index);
+        });
+      });
+
+      // Auto slide for collection
+      setInterval(() => {
+        currentCollectionSlide =
+          (currentCollectionSlide + 1) % collectionSlides.length;
+        goToCollectionSlide(currentCollectionSlide);
+      }, 4000);
+    </script>
+  </body>
+</html>
