@@ -125,8 +125,8 @@ const luxuryProducts = [
     tag: "Exclusive"
   },
   {
-    name: "Crimson Velvet Sectional",
-    price: 125000,
+    name: "Crimson Velvet Sofa",
+    price: 45000,
     category: "Sofa",
     img: customSofa,
     tag: "Bespoke"
@@ -265,8 +265,8 @@ const luxuryProducts = [
     tag: "Signature"
   },
   {
-    name: "Imperial Blue Wardrobe",
-    price: 85000,
+    name: "Imperial Blue Almirah",
+    price: 30000,
     category: "Bedroom",
     img: blueWardrobe,
     tag: "New Arrival"
@@ -301,7 +301,7 @@ const luxuryProducts = [
   },
   {
     name: "Royal Floral Teak Bed",
-    price: 78000,
+    price: 35000,
     category: "Bedroom",
     img: floralBed,
     tag: "Classic"
@@ -350,7 +350,7 @@ const luxuryProducts = [
   },
   {
     name: "Walnut Horizon Dining",
-    price: 115000,
+    price: 35000,
     category: "Dining",
     img: walnutGlassDining,
     tag: "Luxury"
@@ -412,8 +412,8 @@ const luxuryProducts = [
     tag: "Modern"
   },
   {
-    name: "Bespoke Walnut Shoe Gallery",
-    price: 18500,
+    name: "Bespoke Walnut Shoescase",
+    price: 25000,
     category: "Storage",
     img: shoeCabinet,
     tag: "Essential"
@@ -440,8 +440,8 @@ const luxuryProducts = [
     tag: "Comfort"
   },
   {
-    name: "Elite Walnut Executive Desk",
-    price: 34500,
+    name: "Elite Walnut Office Table",
+    price: 25000,
     category: "Office",
     img: executiveDesk,
     tag: "Professional"
@@ -482,8 +482,8 @@ const luxuryProducts = [
     tag: "Gaming"
   },
   {
-    name: "Zenith Coding Ergonomic",
-    price: 28500,
+    name: "Zenith Coding Ergonomic Chair",
+    price: 15000,
     category: "Office",
     img: codingChair,
     tag: "Coding"
