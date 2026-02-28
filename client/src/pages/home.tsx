@@ -98,28 +98,28 @@ const formatPrice = (price: number) => {
 const luxuryProducts = [
   {
     name: "Royal Gold Velvet Sofa Set",
-    price: 185000,
+    price: 45000,
     category: "Sofa",
     img: royalSofa,
     tag: "Royal"
   },
   {
     name: "Emerald Curve Sectional",
-    price: 145000,
+    price: 42000,
     category: "Sofa",
     img: emeraldSofa,
     tag: "Modern"
   },
   {
     name: "Executive Boss Series VII",
-    price: 45000,
+    price: 15000,
     category: "Office",
     img: bossChair,
     tag: "Premium"
   },
   {
     name: "Onyx Gold Dining Ensemble",
-    price: 275000,
+    price: 35000,
     category: "Dining",
     img: onyxDining,
     tag: "Exclusive"
@@ -133,133 +133,133 @@ const luxuryProducts = [
   },
   {
     name: "Imperial Steel Tijori",
-    price: 85000,
+    price: 30000,
     category: "Security",
     img: tijoriSafe,
     tag: "High Security"
   },
   {
     name: "Carrara Gold Dining Table",
-    price: 195000,
+    price: 35000,
     category: "Dining",
     img: productTable,
     tag: "Luxury"
   },
   {
     name: "Director's Series Chair",
-    price: 38000,
+    price: 15000,
     category: "Office",
     img: officeChair,
     tag: "Executive"
   },
   {
     name: "Royal Gold Inlay Bed",
-    price: 225000,
+    price: 35000,
     category: "Bedroom",
     img: royalBed,
     tag: "Master"
   },
   {
     name: "Zenith Floating Suite",
-    price: 185000,
+    price: 32000,
     category: "Bedroom",
     img: floatingBed,
     tag: "Modern"
   },
   {
     name: "Midnight Velvet Grandeur",
-    price: 245000,
+    price: 35000,
     category: "Bedroom",
     img: velvetBed,
     tag: "Designer"
   },
   {
     name: "Celestial Brass Canopy",
-    price: 215000,
+    price: 35000,
     category: "Bedroom",
     img: canopyBed,
     tag: "Luxury"
   },
   {
     name: "Milano Leather Platform",
-    price: 195000,
+    price: 35000,
     category: "Bedroom",
     img: leatherBed,
     tag: "Italian"
   },
   {
     name: "Ivory Serpentine Curve",
-    price: 165000,
+    price: 45000,
     category: "Sofa",
     img: ivorySofa,
     tag: "Modern"
   },
   {
     name: "Vogue Modular Leather",
-    price: 215000,
+    price: 45000,
     category: "Sofa",
     img: blackLeatherSofa,
     tag: "Italian"
   },
   {
     name: "Sapphire Grand Chesterfield",
-    price: 175000,
+    price: 45000,
     category: "Sofa",
     img: sapphireSofa,
     tag: "Luxury"
   },
   {
     name: "Nordic Oak Minimalist",
-    price: 125000,
+    price: 42000,
     category: "Sofa",
     img: scandiSofa,
     tag: "Scandi"
   },
   {
     name: "Avant-Garde Bubble Seat",
-    price: 195000,
+    price: 45000,
     category: "Sofa",
     img: bubbleSofa,
     tag: "Unique"
   },
   {
     name: "Chocolate Suede Sectional",
-    price: 235000,
+    price: 45000,
     category: "Sofa",
     img: suedeSectional,
     tag: "L-Shape"
   },
   {
     name: "Emerald Tuxedo Series",
-    price: 145000,
+    price: 45000,
     category: "Sofa",
     img: tuxedoSofa,
     tag: "Hotel Luxe"
   },
   {
     name: "Blush Shell Designer",
-    price: 135000,
+    price: 42000,
     category: "Sofa",
     img: shellSofa,
     tag: "Art Deco"
   },
   {
     name: "Cine-Luxe 4-Seater Theater",
-    price: 285000,
+    price: 45000,
     category: "Sofa",
     img: theaterSofa,
     tag: "Home Cinema"
   },
   {
     name: "Solaris Gold Daybed",
-    price: 115000,
+    price: 45000,
     category: "Sofa",
     img: daybedSofa,
     tag: "Minimalist"
   },
   {
     name: "Golden Comfort Sectional",
-    price: 168000,
+    price: 45000,
     category: "Sofa",
     img: premiumSectional,
     tag: "Signature"
@@ -273,28 +273,28 @@ const luxuryProducts = [
   },
   {
     name: "Arcade Media Console",
-    price: 72000,
+    price: 25000,
     category: "Living",
     img: tealTvUnit,
     tag: "Modern"
   },
   {
     name: "Diamond Wing Master Bed",
-    price: 285000,
+    price: 35000,
     category: "Bedroom",
     img: diamondBed,
     tag: "Ultra Luxe"
   },
   {
     name: "Heritage Taupe Tijori",
-    price: 92000,
+    price: 30000,
     category: "Storage",
     img: taupeTijori,
     tag: "Secure"
   },
   {
     name: "Butterfly Art Master Suite",
-    price: 65000,
+    price: 35000,
     category: "Bedroom",
     img: butterflyBed,
     tag: "Artistic"
@@ -308,42 +308,42 @@ const luxuryProducts = [
   },
   {
     name: "Academic 15-Door Locker",
-    price: 42000,
+    price: 28000,
     category: "Storage",
     img: studentLocker,
     tag: "School"
   },
   {
     name: "Elite Office Staff Unit",
-    price: 38500,
+    price: 26000,
     category: "Storage",
     img: staffLocker,
     tag: "Corporate"
   },
   {
     name: "Marble Aura LED Wall",
-    price: 88000,
+    price: 25000,
     category: "Living",
     img: marbleTvUnit,
     tag: "Luxury"
   },
   {
     name: "Teak Ribbed Grand Console",
-    price: 95000,
+    price: 28000,
     category: "Living",
     img: teakTvUnitDisplay,
     tag: "Bespoke"
   },
   {
     name: "Lumina Glass Media Suite",
-    price: 74000,
+    price: 24000,
     category: "Living",
     img: glassMediaCenter,
     tag: "Modern"
   },
   {
     name: "Teak Crystal Dining Set",
-    price: 82000,
+    price: 35000,
     category: "Dining",
     img: teakGlassDining,
     tag: "Modern"
@@ -357,56 +357,56 @@ const luxuryProducts = [
   },
   {
     name: "Nordic Glass Dining",
-    price: 68000,
+    price: 32000,
     category: "Dining",
     img: oakGlassDining,
     tag: "Minimalist"
   },
   {
     name: "Elite Blue Deluxe Tijori",
-    price: 54000,
+    price: 30000,
     category: "Storage",
     img: blueTijori,
     tag: "Security"
   },
   {
     name: "Grand 5-Door Dressing Suite",
-    price: 62000,
+    price: 30000,
     category: "Storage",
     img: fiveDoorTijori,
     tag: "Premium"
   },
   {
     name: "Professional Side Dressing Unit",
-    price: 48000,
+    price: 28000,
     category: "Storage",
     img: sideDressingTijori,
     tag: "Versatile"
   },
   {
     name: "Diamond Executive Throne",
-    price: 24500,
+    price: 15000,
     category: "Office",
     img: diamondChair,
     tag: "Ergonomic"
   },
   {
     name: "Imperial Walnut Manager Chair",
-    price: 28000,
+    price: 15000,
     category: "Office",
     img: walnutChair,
     tag: "Premium"
   },
   {
     name: "Vatican Tan Sovereign",
-    price: 32000,
+    price: 15000,
     category: "Office",
     img: vaticanChair,
     tag: "Luxury"
   },
   {
     name: "Royal Terracotta Task Chair",
-    price: 21000,
+    price: 12000,
     category: "Office",
     img: terracottaChair,
     tag: "Modern"
@@ -448,7 +448,7 @@ const luxuryProducts = [
   },
   {
     name: "Terminal Cobalt 3-Seater",
-    price: 18500,
+    price: 12000,
     category: "Office",
     img: waitingBench,
     tag: "Commercial"
@@ -462,21 +462,21 @@ const luxuryProducts = [
   },
   {
     name: "Walnut Horizon Media Suite",
-    price: 92000,
+    price: 28000,
     category: "Living",
     img: walnutMediaSuite,
     tag: "Premium"
   },
   {
     name: "Nordic Slatted TV Wall",
-    price: 78500,
+    price: 25000,
     category: "Living",
     img: scandiTvUnit,
     tag: "Modern"
   },
   {
     name: "Libernovo Pro Gaming Throne",
-    price: 32500,
+    price: 15000,
     category: "Office",
     img: libernovoGaming,
     tag: "Gaming"
@@ -490,60 +490,60 @@ const luxuryProducts = [
   },
   {
     name: "Titan Engineer Heavy-Duty",
-    price: 34000,
+    price: 15000,
     category: "Office",
     img: engineerChair,
     tag: "Engineering"
   },
   {
     name: "Libernovo Elite Stealth",
-    price: 38000,
+    price: 15000,
     category: "Office",
     img: libernovoStealth,
     tag: "Pro Gaming"
   },
   {
     name: "Cyber-Nexus Suite Seat",
-    price: 26500,
+    price: 15000,
     category: "Office",
     img: cyberNexusChair,
     tag: "Tech"
   },
   {
     name: "Aura Electric Sit-Stand Desk",
-    price: 48500,
+    price: 25000,
     category: "Office",
     img: standingDesk,
     tag: "Adjustable"
   },
   {
     name: "Zenith Minimalist WFH Desk",
-    price: 22000,
+    price: 18000,
     category: "Office",
     img: wfhDesk,
     tag: "Essential"
   },
   {
     name: "Space-Saver Foldable Desk",
-    price: 12500,
+    price: 12000,
     category: "Office",
     img: foldingDesk,
     tag: "Compact"
   },
   {
     name: "Lumina Smoked Glass Desk",
-    price: 54000,
+    price: 25000,
     category: "Office",
     img: glassDesk,
     tag: "Luxury"
   },
   {
     name: "Walnut Floating Workspace",
-    price: 38000,
+    price: 22000,
     category: "Office",
     img: floatingDesk,
     tag: "Modern"
-  }
+  },
 ];
 
 export default function Home() {
@@ -673,53 +673,65 @@ export default function Home() {
               <p className="text-muted-foreground text-lg leading-relaxed">
                 Experience the quality firsthand. Visit our store in Lunawada, Gujarat, where our designers can help you customize the perfect pieces for your home.
               </p>
-              <div className="space-y-4">
+              <div className="space-y-4 pt-4">
                 <div className="flex items-center gap-4">
-                  <Clock className="h-6 w-6 text-red-600" />
+                  <div className="h-10 w-10 rounded-full bg-red-50 flex items-center justify-center text-red-600">
+                    <Star className="h-5 w-5" />
+                  </div>
                   <div>
-                    <p className="font-bold">Operating Hours</p>
-                    <p className="text-muted-foreground">Mon - Sat: 9:15 AM - 8:30 PM</p>
+                    <h4 className="font-bold text-sm uppercase tracking-wider">Address</h4>
+                    <p className="text-muted-foreground text-sm">Lunawada, Gujarat, India</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="h-10 w-10 rounded-full bg-red-50 flex items-center justify-center text-red-600">
+                    <Clock className="h-5 w-5" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-sm uppercase tracking-wider">Hours</h4>
+                    <p className="text-muted-foreground text-sm">Mon - Sat: 9:00 AM - 8:00 PM</p>
                   </div>
                 </div>
               </div>
-              <Button size="lg" className="rounded-none bg-black text-white px-10 h-14">Get Directions</Button>
+              <Button size="lg" className="bg-red-600 text-white hover:bg-red-700 rounded-none px-8 h-14 mt-6">
+                Get Directions
+              </Button>
             </div>
-            <div className="h-[400px] bg-secondary/20 relative overflow-hidden">
-               <img src={heroImage} alt="Showroom" className="w-full h-full object-cover grayscale opacity-50" />
-               <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="bg-white p-8 shadow-2xl border border-border">
-                    <h4 className="font-serif text-2xl mb-4">Lunawada Store</h4>
-                    <p className="text-muted-foreground">Modasa Road, opposite SBI Bank</p>
-                    <p className="text-muted-foreground">Gujarat 389230</p>
-                  </div>
-               </div>
+            <div className="relative aspect-video lg:aspect-square overflow-hidden rounded-none shadow-2xl">
+              <img 
+                src={heroImage} 
+                alt="Showroom" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* Trust Factors */}
+        <section className="py-16 bg-black text-white">
+          <div className="container mx-auto px-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+              <div className="space-y-4">
+                <Truck className="h-10 w-10 mx-auto text-red-600" />
+                <h3 className="text-xl font-medium">Pan-Gujarat Delivery</h3>
+                <p className="text-gray-400 text-sm">Safe and professional delivery across the state.</p>
+              </div>
+              <div className="space-y-4">
+                <ShieldCheck className="h-10 w-10 mx-auto text-red-600" />
+                <h3 className="text-xl font-medium">Lifetime Support</h3>
+                <p className="text-gray-400 text-sm">We stand by our craftsmanship for years to come.</p>
+              </div>
+              <div className="space-y-4">
+                <Lock className="h-10 w-10 mx-auto text-red-600" />
+                <h3 className="text-xl font-medium">Secure Storage</h3>
+                <p className="text-gray-400 text-sm">Market leaders in high-security tijori systems.</p>
+              </div>
             </div>
           </div>
         </section>
       </main>
 
       <Footer />
-
-      {/* Floating WhatsApp Button */}
-      <a
-        href="https://wa.me/919737217844"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-8 right-8 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform duration-300 flex items-center justify-center group"
-        aria-label="Contact on WhatsApp"
-        data-testid="link-whatsapp"
-      >
-        <svg 
-          viewBox="0 0 24 24" 
-          className="w-7 h-7 fill-current"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-        </svg>
-        <span className="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-500 ease-in-out whitespace-nowrap text-sm font-medium ml-0 group-hover:ml-2">
-          Chat with us
-        </span>
-      </a>
     </div>
   );
 }
