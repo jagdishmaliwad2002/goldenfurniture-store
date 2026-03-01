@@ -105,63 +105,63 @@ const luxuryProducts = [
   },
   {
     name: "Emerald Curve Sectional",
-    price: 42000,
+    price: 42500,
     category: "Sofa",
     img: emeraldSofa,
     tag: "Modern"
   },
   {
     name: "Executive Boss Series VII",
-    price: 15000,
+    price: 14800,
     category: "Office",
     img: bossChair,
     tag: "Premium"
   },
   {
     name: "Onyx Gold Dining Ensemble",
-    price: 35000,
+    price: 34500,
     category: "Dining",
     img: onyxDining,
     tag: "Exclusive"
   },
   {
     name: "Crimson Velvet Sofa",
-    price: 45000,
+    price: 43800,
     category: "Sofa",
     img: customSofa,
     tag: "Bespoke"
   },
   {
     name: "Imperial Steel Tijori",
-    price: 30000,
+    price: 29500,
     category: "Security",
     img: tijoriSafe,
     tag: "High Security"
   },
   {
     name: "Carrara Gold Dining Table",
-    price: 35000,
+    price: 33900,
     category: "Dining",
     img: productTable,
     tag: "Luxury"
   },
   {
     name: "Director's Series Chair",
-    price: 15000,
+    price: 12500,
     category: "Office",
     img: officeChair,
     tag: "Executive"
   },
   {
     name: "Royal Gold Inlay Bed",
-    price: 35000,
+    price: 34800,
     category: "Bedroom",
     img: royalBed,
     tag: "Master"
   },
   {
     name: "Zenith Floating Suite",
-    price: 32000,
+    price: 31500,
     category: "Bedroom",
     img: floatingBed,
     tag: "Modern"
@@ -175,21 +175,21 @@ const luxuryProducts = [
   },
   {
     name: "Celestial Brass Canopy",
-    price: 35000,
+    price: 34200,
     category: "Bedroom",
     img: canopyBed,
     tag: "Luxury"
   },
   {
     name: "Milano Leather Platform",
-    price: 35000,
+    price: 32800,
     category: "Bedroom",
     img: leatherBed,
     tag: "Italian"
   },
   {
     name: "Ivory Serpentine Curve",
-    price: 45000,
+    price: 44500,
     category: "Sofa",
     img: ivorySofa,
     tag: "Modern"
@@ -203,21 +203,21 @@ const luxuryProducts = [
   },
   {
     name: "Sapphire Grand Chesterfield",
-    price: 45000,
+    price: 43500,
     category: "Sofa",
     img: sapphireSofa,
     tag: "Luxury"
   },
   {
     name: "Nordic Oak Minimalist",
-    price: 42000,
+    price: 38500,
     category: "Sofa",
     img: scandiSofa,
     tag: "Scandi"
   },
   {
     name: "Avant-Garde Bubble Seat",
-    price: 45000,
+    price: 44800,
     category: "Sofa",
     img: bubbleSofa,
     tag: "Unique"
@@ -231,14 +231,14 @@ const luxuryProducts = [
   },
   {
     name: "Emerald Tuxedo Series",
-    price: 45000,
+    price: 42200,
     category: "Sofa",
     img: tuxedoSofa,
     tag: "Hotel Luxe"
   },
   {
     name: "Blush Shell Designer",
-    price: 42000,
+    price: 39500,
     category: "Sofa",
     img: shellSofa,
     tag: "Art Deco"
@@ -252,28 +252,28 @@ const luxuryProducts = [
   },
   {
     name: "Solaris Gold Daybed",
-    price: 45000,
+    price: 41800,
     category: "Sofa",
     img: daybedSofa,
     tag: "Minimalist"
   },
   {
     name: "Golden Comfort Sectional",
-    price: 45000,
+    price: 44200,
     category: "Sofa",
     img: premiumSectional,
     tag: "Signature"
   },
   {
     name: "Imperial Blue Almirah",
-    price: 30000,
+    price: 29800,
     category: "Bedroom",
     img: blueWardrobe,
     tag: "New Arrival"
   },
   {
     name: "Arcade Media Console",
-    price: 25000,
+    price: 23500,
     category: "Living",
     img: tealTvUnit,
     tag: "Modern"
@@ -287,14 +287,14 @@ const luxuryProducts = [
   },
   {
     name: "Heritage Taupe Tijori",
-    price: 30000,
+    price: 28500,
     category: "Storage",
     img: taupeTijori,
     tag: "Secure"
   },
   {
     name: "Butterfly Art Master Suite",
-    price: 35000,
+    price: 33800,
     category: "Bedroom",
     img: butterflyBed,
     tag: "Artistic"
@@ -308,42 +308,42 @@ const luxuryProducts = [
   },
   {
     name: "Academic 15-Door Locker",
-    price: 28000,
+    price: 27500,
     category: "Storage",
     img: studentLocker,
     tag: "School"
   },
   {
     name: "Elite Office Staff Unit",
-    price: 26000,
+    price: 24800,
     category: "Storage",
     img: staffLocker,
     tag: "Corporate"
   },
   {
     name: "Marble Aura LED Wall",
-    price: 25000,
+    price: 24500,
     category: "Living",
     img: marbleTvUnit,
     tag: "Luxury"
   },
   {
     name: "Teak Ribbed Grand Console",
-    price: 28000,
+    price: 27200,
     category: "Living",
     img: teakTvUnitDisplay,
     tag: "Bespoke"
   },
   {
     name: "Lumina Glass Media Suite",
-    price: 24000,
+    price: 22800,
     category: "Living",
     img: glassMediaCenter,
     tag: "Modern"
   },
   {
     name: "Teak Crystal Dining Set",
-    price: 35000,
+    price: 34500,
     category: "Dining",
     img: teakGlassDining,
     tag: "Modern"
@@ -357,42 +357,42 @@ const luxuryProducts = [
   },
   {
     name: "Nordic Glass Dining",
-    price: 32000,
+    price: 31800,
     category: "Dining",
     img: oakGlassDining,
     tag: "Minimalist"
   },
   {
     name: "Elite Blue Deluxe Tijori",
-    price: 30000,
+    price: 29200,
     category: "Storage",
     img: blueTijori,
     tag: "Security"
   },
   {
     name: "Grand 5-Door Dressing Suite",
-    price: 30000,
+    price: 29800,
     category: "Storage",
     img: fiveDoorTijori,
     tag: "Premium"
   },
   {
     name: "Professional Side Dressing Unit",
-    price: 28000,
+    price: 27500,
     category: "Storage",
     img: sideDressingTijori,
     tag: "Versatile"
   },
   {
     name: "Diamond Executive Throne",
-    price: 15000,
+    price: 14200,
     category: "Office",
     img: diamondChair,
     tag: "Ergonomic"
   },
   {
     name: "Imperial Walnut Manager Chair",
-    price: 15000,
+    price: 14800,
     category: "Office",
     img: walnutChair,
     tag: "Premium"
@@ -406,14 +406,14 @@ const luxuryProducts = [
   },
   {
     name: "Royal Terracotta Task Chair",
-    price: 12000,
+    price: 11800,
     category: "Office",
     img: terracottaChair,
     tag: "Modern"
   },
   {
     name: "Bespoke Walnut Shoescase",
-    price: 25000,
+    price: 24500,
     category: "Storage",
     img: shoeCabinet,
     tag: "Essential"
@@ -441,105 +441,105 @@ const luxuryProducts = [
   },
   {
     name: "Elite Walnut Office Table",
-    price: 25000,
+    price: 24800,
     category: "Office",
     img: executiveDesk,
     tag: "Professional"
   },
   {
     name: "Terminal Cobalt 3-Seater",
-    price: 12000,
+    price: 11500,
     category: "Office",
     img: waitingBench,
     tag: "Commercial"
   },
   {
     name: "Zenith Dual Shoe Suite",
-    price: 22500,
+    price: 22200,
     category: "Storage",
     img: dualShoeCabinet,
     tag: "Minimalist"
   },
   {
     name: "Walnut Horizon Media Suite",
-    price: 28000,
+    price: 27800,
     category: "Living",
     img: walnutMediaSuite,
     tag: "Premium"
   },
   {
     name: "Nordic Slatted TV Wall",
-    price: 25000,
+    price: 24800,
     category: "Living",
     img: scandiTvUnit,
     tag: "Modern"
   },
   {
     name: "Libernovo Pro Gaming Throne",
-    price: 15000,
+    price: 14500,
     category: "Office",
     img: libernovoGaming,
     tag: "Gaming"
   },
   {
     name: "Zenith Coding Ergonomic Chair",
-    price: 15000,
+    price: 13800,
     category: "Office",
     img: codingChair,
     tag: "Coding"
   },
   {
     name: "Titan Engineer Heavy-Duty",
-    price: 15000,
+    price: 14200,
     category: "Office",
     img: engineerChair,
     tag: "Engineering"
   },
   {
     name: "Libernovo Elite Stealth",
-    price: 15000,
+    price: 14800,
     category: "Office",
     img: libernovoStealth,
     tag: "Pro Gaming"
   },
   {
     name: "Cyber-Nexus Suite Seat",
-    price: 15000,
+    price: 13500,
     category: "Office",
     img: cyberNexusChair,
     tag: "Tech"
   },
   {
     name: "Aura Electric Sit-Stand Desk",
-    price: 25000,
+    price: 24500,
     category: "Office",
     img: standingDesk,
     tag: "Adjustable"
   },
   {
     name: "Zenith Minimalist WFH Desk",
-    price: 18000,
+    price: 17800,
     category: "Office",
     img: wfhDesk,
     tag: "Essential"
   },
   {
     name: "Space-Saver Foldable Desk",
-    price: 12000,
+    price: 11800,
     category: "Office",
     img: foldingDesk,
     tag: "Compact"
   },
   {
     name: "Lumina Smoked Glass Desk",
-    price: 25000,
+    price: 24900,
     category: "Office",
     img: glassDesk,
     tag: "Luxury"
   },
   {
     name: "Walnut Floating Workspace",
-    price: 22000,
+    price: 21500,
     category: "Office",
     img: floatingDesk,
     tag: "Modern"
