@@ -1,9 +1,13 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Star, Truck, ShieldCheck, Clock, Lock, Armchair, Briefcase, LayoutGrid } from "lucide-react";
+import { ArrowRight, Star, Truck, ShieldCheck, Clock, Lock, Armchair, Briefcase, LayoutGrid, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Navbar, Footer } from "@/components/layout";
+import { useState } from "react";
 
-// Assets
+// Assets with lazy loading logic or optimized imports if possible
+// Note: In Vite, these are handled as static assets. 
+// For "Fast Loading", we'll ensure <img> tags use loading="lazy" and fetchpriority="high" for hero.
+
 import heroImage from "@assets/generated_images/luxury_living_room_with_golden_accents.png";
 import productChair from "@assets/WhatsApp_Image_2026-02-27_at_12.05.31_PM_1772341101012.jpeg";
 import productTable from "@assets/generated_images/marble_dining_table_gold_legs.png";
@@ -77,14 +81,6 @@ const fadeIn = {
   initial: { opacity: 0, y: 20 },
   animate: { opacity: 1, y: 0 },
   transition: { duration: 0.6 }
-};
-
-const staggerContainer = {
-  animate: {
-    transition: {
-      staggerChildren: 0.1
-    }
-  }
 };
 
 const formatPrice = (price: number) => {
@@ -547,45 +543,49 @@ const luxuryProducts = [
 ];
 
 export default function Home() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   return (
-    <div className="min-h-screen bg-background flex flex-col font-sans">
+    <div className="min-h-screen bg-background flex flex-col font-sans overflow-x-hidden">
       <Navbar />
 
       <main className="flex-1">
-        {/* Hero Section */}
-        <section className="relative h-[90vh] min-h-[600px] flex items-center justify-center overflow-hidden">
+        {/* Hero Section - Optimized for Desktop & Mobile */}
+        <section className="relative h-[80vh] md:h-[90vh] min-h-[500px] flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img 
               src={customSofa} 
               alt="Bespoke Red Sofa" 
+              fetchPriority="high"
               className="w-full h-full object-cover brightness-[0.85]"
+              style={{ objectPosition: 'center 30%' }}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-80" />
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-black/20 to-transparent opacity-80" />
           </div>
           
-          <div className="container relative z-10 px-4 text-center text-white pt-20">
+          <div className="container relative z-10 px-4 text-center text-white pt-10 md:pt-20">
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="space-y-6 max-w-4xl mx-auto"
+              className="space-y-4 md:space-y-6 max-w-4xl mx-auto"
             >
-              <span className="inline-block py-1 px-3 border border-white/30 rounded-full text-xs font-medium tracking-[0.2em] uppercase backdrop-blur-sm bg-white/10">
+              <span className="inline-block py-1 px-3 border border-white/30 rounded-full text-[10px] md:text-xs font-medium tracking-[0.2em] uppercase backdrop-blur-sm bg-white/10">
                 Since 2010 • Lunawada
               </span>
-              <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-medium leading-tight tracking-tight">
-                Crafting <span className="italic font-light text-primary-foreground/90">Comfort</span> <br/>
+              <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-medium leading-[1.1] tracking-tight">
+                Crafting <span className="italic font-light text-primary-foreground/90">Comfort</span> <br className="hidden sm:block"/>
                 & Elegance
               </h1>
-              <p className="text-lg md:text-xl text-white/80 max-w-xl mx-auto font-light leading-relaxed">
+              <p className="text-base md:text-xl text-white/80 max-w-xl mx-auto font-light leading-relaxed px-4">
                 Premium furniture tailored to your lifestyle. From bespoke sofas to high-security lockers, 
                 discover excellence at Golden Furniture.
               </p>
-              <div className="pt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <Button size="lg" className="bg-red-600 text-white hover:bg-red-700 rounded-none px-8 h-14 text-base tracking-wide min-w-[180px]">
+              <div className="pt-6 md:pt-8 flex flex-col sm:flex-row gap-4 justify-center items-center px-4">
+                <Button size="lg" className="w-full sm:w-auto bg-red-600 text-white hover:bg-red-700 rounded-none px-8 h-12 md:h-14 text-sm md:text-base tracking-wide min-w-[180px]">
                   Shop Collection
                 </Button>
-                <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10 rounded-none px-8 h-14 text-base tracking-wide min-w-[180px]">
+                <Button size="lg" variant="outline" className="w-full sm:w-auto text-white border-white hover:bg-white/10 rounded-none px-8 h-12 md:h-14 text-sm md:text-base tracking-wide min-w-[180px]">
                   Explore Bespoke
                 </Button>
               </div>
@@ -593,15 +593,15 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Categories Section */}
-        <section className="py-24 bg-card">
+        {/* Categories Section - Responsive Grid */}
+        <section className="py-16 md:py-24 bg-card">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-16 space-y-4">
-              <h2 className="font-serif text-4xl md:text-5xl font-medium">Our Specialized Range</h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto">Providing high-quality solutions for your home and office in Gujarat.</p>
+            <div className="text-center mb-12 md:mb-16 space-y-3 md:space-y-4">
+              <h2 className="font-serif text-3xl md:text-5xl font-medium">Our Specialized Range</h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto text-sm md:text-base">Providing high-quality solutions for your home and office in Gujarat.</p>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6">
               {[
                 { icon: Armchair, label: "Sofa", img: customSofa },
                 { icon: Briefcase, label: "Office", img: officeChair },
@@ -610,54 +610,60 @@ export default function Home() {
                 { icon: Star, label: "Beds", img: productBed },
                 { icon: ArrowRight, label: "Dining", img: productTable },
               ].map((item, i) => (
-                <div key={i} className="group cursor-pointer text-center space-y-4">
-                  <div className="aspect-square bg-secondary/30 rounded-full flex items-center justify-center transition-all duration-300 group-hover:bg-red-600 group-hover:text-white group-hover:scale-110 overflow-hidden relative">
-                    <img src={item.img} alt={item.label} className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-40" />
-                    <item.icon className="h-8 w-8 relative z-10" />
+                <div key={i} className="group cursor-pointer text-center space-y-3 md:space-y-4">
+                  <div className="aspect-square bg-secondary/30 rounded-full flex items-center justify-center transition-all duration-300 group-hover:bg-red-600 group-hover:text-white group-hover:scale-105 overflow-hidden relative mx-auto w-24 h-24 sm:w-32 sm:h-32 md:w-full md:h-full">
+                    <img 
+                      src={item.img} 
+                      alt={item.label} 
+                      loading="lazy"
+                      className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-40" 
+                    />
+                    <item.icon className="h-6 w-6 sm:h-8 sm:w-8 relative z-10" />
                   </div>
-                  <h3 className="font-medium uppercase tracking-widest text-sm">{item.label}</h3>
+                  <h3 className="font-medium uppercase tracking-widest text-[10px] md:text-sm">{item.label}</h3>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Featured Products */}
-        <section className="py-24 bg-secondary/10">
+        {/* Featured Products - Mobile First Grid */}
+        <section className="py-16 md:py-24 bg-secondary/10">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-16 space-y-4">
-              <h2 className="font-serif text-4xl md:text-5xl font-medium">Signature Collection</h2>
-              <p className="text-muted-foreground">Premium selection of our most exclusive luxury pieces.</p>
+            <div className="text-center mb-12 md:mb-16 space-y-3 md:space-y-4">
+              <h2 className="font-serif text-3xl md:text-5xl font-medium">Signature Collection</h2>
+              <p className="text-muted-foreground text-sm md:text-base">Premium selection of our most exclusive luxury pieces.</p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
               {luxuryProducts.map((product, index) => (
                 <motion.div 
                   key={index}
                   variants={fadeIn} 
                   initial="initial" 
                   whileInView="animate" 
-                  viewport={{ once: true }} 
-                  transition={{ delay: index * 0.1 }} 
+                  viewport={{ once: true, margin: "50px" }} 
+                  transition={{ delay: index % 4 * 0.1 }} 
                   className="group cursor-pointer"
                 >
-                  <div className="relative aspect-[3/4] overflow-hidden bg-white mb-4 shadow-sm group">
+                  <div className="relative aspect-[3/4] overflow-hidden bg-white mb-3 md:mb-4 shadow-sm group">
                     <img 
                       src={product.img} 
                       alt={product.name} 
-                      className="w-full h-full object-contain p-2 transition-transform duration-700 group-hover:scale-110" 
+                      loading="lazy"
+                      className="w-full h-full object-contain p-2 transition-transform duration-700 md:group-hover:scale-110" 
                     />
-                    <div className="absolute top-4 left-4 bg-red-600 text-white text-[0.6rem] font-bold px-2 py-1 uppercase tracking-tighter">
+                    <div className="absolute top-2 left-2 md:top-4 md:left-4 bg-red-600 text-white text-[8px] md:text-[0.6rem] font-bold px-2 py-1 uppercase tracking-tighter">
                       {product.tag}
                     </div>
-                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300" />
-                    <Button className="absolute bottom-6 left-1/2 -translate-x-1/2 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 bg-white text-black hover:bg-white/90 min-w-[140px] shadow-lg rounded-none text-xs uppercase tracking-widest">
+                    <div className="absolute inset-0 bg-black/0 md:group-hover:bg-black/5 transition-colors duration-300" />
+                    <Button className="hidden md:flex absolute bottom-6 left-1/2 -translate-x-1/2 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 bg-white text-black hover:bg-white/90 min-w-[140px] shadow-lg rounded-none text-xs uppercase tracking-widest">
                       View Details
                     </Button>
                   </div>
                   <div className="space-y-1">
-                    <p className="text-[0.6rem] uppercase tracking-widest text-muted-foreground">{product.category}</p>
-                    <h3 className="font-serif text-xl group-hover:text-red-600 transition-colors leading-tight">{product.name}</h3>
-                    <p className="font-bold text-lg text-red-600">{formatPrice(product.price)}</p>
+                    <p className="text-[8px] md:text-[0.6rem] uppercase tracking-widest text-muted-foreground">{product.category}</p>
+                    <h3 className="font-serif text-lg md:text-xl group-hover:text-red-600 transition-colors leading-tight">{product.name}</h3>
+                    <p className="font-bold text-base md:text-lg text-red-600">{formatPrice(product.price)}</p>
                   </div>
                 </motion.div>
               ))}
@@ -665,66 +671,67 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Visit Section */}
-        <section className="py-24">
-          <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <h2 className="font-serif text-4xl md:text-5xl font-medium">Visit Our Showroom</h2>
-              <p className="text-muted-foreground text-lg leading-relaxed">
+        {/* Visit Section - Responsive Layout */}
+        <section className="py-16 md:py-24">
+          <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
+            <div className="space-y-4 md:space-y-6 text-center lg:text-left">
+              <h2 className="font-serif text-3xl md:text-5xl font-medium">Visit Our Showroom</h2>
+              <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
                 Experience the quality firsthand. Visit our store in Lunawada, Gujarat, where our designers can help you customize the perfect pieces for your home.
               </p>
-              <div className="space-y-4 pt-4">
+              <div className="space-y-4 pt-4 text-left max-w-md mx-auto lg:mx-0">
                 <div className="flex items-center gap-4">
-                  <div className="h-10 w-10 rounded-full bg-red-50 flex items-center justify-center text-red-600">
+                  <div className="h-10 w-10 shrink-0 rounded-full bg-red-50 flex items-center justify-center text-red-600">
                     <Star className="h-5 w-5" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-sm uppercase tracking-wider">Address</h4>
-                    <p className="text-muted-foreground text-sm">Lunawada, Gujarat, India</p>
+                    <h4 className="font-bold text-xs md:text-sm uppercase tracking-wider">Address</h4>
+                    <p className="text-muted-foreground text-xs md:text-sm">Lunawada, Gujarat, India</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
-                  <div className="h-10 w-10 rounded-full bg-red-50 flex items-center justify-center text-red-600">
+                  <div className="h-10 w-10 shrink-0 rounded-full bg-red-50 flex items-center justify-center text-red-600">
                     <Clock className="h-5 w-5" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-sm uppercase tracking-wider">Hours</h4>
-                    <p className="text-muted-foreground text-sm">Mon - Sat: 9:00 AM - 8:00 PM</p>
+                    <h4 className="font-bold text-xs md:text-sm uppercase tracking-wider">Hours</h4>
+                    <p className="text-muted-foreground text-xs md:text-sm">Mon - Sat: 9:00 AM - 8:00 PM</p>
                   </div>
                 </div>
               </div>
-              <Button size="lg" className="bg-red-600 text-white hover:bg-red-700 rounded-none px-8 h-14 mt-6">
+              <Button size="lg" className="w-full sm:w-auto bg-red-600 text-white hover:bg-red-700 rounded-none px-8 h-12 md:h-14 mt-6">
                 Get Directions
               </Button>
             </div>
-            <div className="relative aspect-video lg:aspect-square overflow-hidden rounded-none shadow-2xl">
+            <div className="relative aspect-video lg:aspect-square overflow-hidden rounded-none shadow-2xl order-first lg:order-last">
               <img 
                 src={heroImage} 
                 alt="Showroom" 
+                loading="lazy"
                 className="w-full h-full object-cover"
               />
             </div>
           </div>
         </section>
 
-        {/* Trust Factors */}
-        <section className="py-16 bg-black text-white">
+        {/* Trust Factors - Stacked on Mobile */}
+        <section className="py-12 md:py-16 bg-black text-white">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
-              <div className="space-y-4">
-                <Truck className="h-10 w-10 mx-auto text-red-600" />
-                <h3 className="text-xl font-medium">Pan-Gujarat Delivery</h3>
-                <p className="text-gray-400 text-sm">Safe and professional delivery across the state.</p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 text-center">
+              <div className="space-y-3 md:space-y-4">
+                <Truck className="h-8 w-8 md:h-10 md:w-10 mx-auto text-red-600" />
+                <h3 className="text-lg md:text-xl font-medium">Pan-Gujarat Delivery</h3>
+                <p className="text-gray-400 text-xs md:text-sm">Safe and professional delivery across the state.</p>
               </div>
-              <div className="space-y-4">
-                <ShieldCheck className="h-10 w-10 mx-auto text-red-600" />
-                <h3 className="text-xl font-medium">Lifetime Support</h3>
-                <p className="text-gray-400 text-sm">We stand by our craftsmanship for years to come.</p>
+              <div className="space-y-3 md:space-y-4">
+                <ShieldCheck className="h-8 w-8 md:h-10 md:w-10 mx-auto text-red-600" />
+                <h3 className="text-lg md:text-xl font-medium">Lifetime Support</h3>
+                <p className="text-gray-400 text-xs md:text-sm">We stand by our craftsmanship for years to come.</p>
               </div>
-              <div className="space-y-4">
-                <Lock className="h-10 w-10 mx-auto text-red-600" />
-                <h3 className="text-xl font-medium">Secure Storage</h3>
-                <p className="text-gray-400 text-sm">Market leaders in high-security tijori systems.</p>
+              <div className="space-y-3 md:space-y-4">
+                <Lock className="h-8 w-8 md:h-10 md:w-10 mx-auto text-red-600" />
+                <h3 className="text-lg md:text-xl font-medium">Secure Storage</h3>
+                <p className="text-gray-400 text-xs md:text-sm">Market leaders in high-security tijori systems.</p>
               </div>
             </div>
           </div>
