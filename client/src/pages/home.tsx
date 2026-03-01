@@ -5,7 +5,7 @@ import { Navbar, Footer } from "@/components/layout";
 
 // Assets
 import heroImage from "@assets/generated_images/luxury_living_room_with_golden_accents.png";
-import productChair from "@assets/generated_images/golden_velvet_armchair.png";
+import productChair from "@assets/WhatsApp_Image_2026-02-27_at_12.05.31_PM_1772341101012.jpeg";
 import productTable from "@assets/generated_images/marble_dining_table_gold_legs.png";
 import productBed from "@assets/generated_images/luxury_bedroom_interior.png";
 import officeChair from "@assets/generated_images/modern_office_chair_luxury.png";
@@ -32,10 +32,10 @@ import shellSofa from "@assets/generated_images/art_deco_shell_sofa_pink.png";
 import theaterSofa from "@assets/generated_images/luxury_reclining_home_theater_sofa.png";
 import daybedSofa from "@assets/generated_images/modern_daybed_sofa_gold_frame.png";
 import premiumSectional from "@assets/generated_images/modern_grey_sectional_sofa_premium.png";
-import blueWardrobe from "@assets/generated_images/luxury_blue_3-door_wardrobe_mirror.png";
+import blueWardrobe from "@assets/WhatsApp_Image_2026-02-27_at_12.05.03_PM_(1)_1772341105755.jpeg";
 import tealTvUnit from "@assets/generated_images/modern_tv_unit_console_teal.png";
 import diamondBed from "@assets/generated_images/luxury_cream_diamond_tufted_bed.png";
-import taupeTijori from "@assets/generated_images/luxury_taupe_3-door_tijori_wardrobe.png";
+import taupeTijori from "@assets/WhatsApp_Image_2026-02-27_at_12.02.31_PM_1772341123779.jpeg";
 import butterflyBed from "@assets/generated_images/modern_indian_butterfly_art_bed.png";
 import floralBed from "@assets/generated_images/contemporary_floral_indian_bed_design.png";
 import studentLocker from "@assets/generated_images/modern_school_student_locker_unit.png";
@@ -46,10 +46,10 @@ import glassMediaCenter from "@assets/generated_images/contemporary_glass_led_me
 import teakGlassDining from "@assets/generated_images/modern_glass_top_teak_dining_table.png";
 import walnutGlassDining from "@assets/generated_images/contemporary_walnut_glass_dining_set.png";
 import oakGlassDining from "@assets/generated_images/minimalist_oak_glass_dining_table.png";
-import blueTijori from "@assets/generated_images/elite_blue_deluxe_tijori_wardrobe.png";
-import fiveDoorTijori from "@assets/generated_images/modern_5-door_dressing_tijori_suite.png";
-import sideDressingTijori from "@assets/generated_images/side_dressing_professional_cupboard.png";
-import diamondChair from "@assets/generated_images/executive_diamond_stitched_office_chair.png";
+import blueTijori from "@assets/WhatsApp_Image_2026-02-27_at_12.05.02_PM_(1)_1772341113527.jpeg";
+import fiveDoorTijori from "@assets/WhatsApp_Image_2026-02-27_at_12.05.01_PM_(1)_1772341127419.jpeg";
+import sideDressingTijori from "@assets/WhatsApp_Image_2026-02-27_at_12.05.02_PM_(2)_1772341110619.jpeg";
+import diamondChair from "@assets/WhatsApp_Image_2026-02-27_at_12.05.31_PM_1772341101012.jpeg";
 import walnutChair from "@assets/generated_images/imperial_walnut_leather_executive_chair.png";
 import vaticanChair from "@assets/generated_images/vatican_tan_leather_throne_chair.png";
 import terracottaChair from "@assets/generated_images/royal_terracotta_ergonomic_office_chair.png";
@@ -98,14 +98,14 @@ const formatPrice = (price: number) => {
 const luxuryProducts = [
   {
     name: "Royal Gold Velvet Sofa Set",
-    price: 45000,
+    price: 28500,
     category: "Sofa",
     img: royalSofa,
     tag: "Royal"
   },
   {
     name: "Emerald Curve Sectional",
-    price: 42500,
+    price: 24200,
     category: "Sofa",
     img: emeraldSofa,
     tag: "Modern"
@@ -119,28 +119,28 @@ const luxuryProducts = [
   },
   {
     name: "Onyx Gold Dining Ensemble",
-    price: 34500,
+    price: 29500,
     category: "Dining",
     img: onyxDining,
     tag: "Exclusive"
   },
   {
     name: "Crimson Velvet Sofa",
-    price: 43800,
+    price: 26800,
     category: "Sofa",
     img: customSofa,
     tag: "Bespoke"
   },
   {
     name: "Imperial Steel Tijori",
-    price: 29500,
+    price: 18500,
     category: "Security",
     img: tijoriSafe,
     tag: "High Security"
   },
   {
     name: "Carrara Gold Dining Table",
-    price: 33900,
+    price: 27900,
     category: "Dining",
     img: productTable,
     tag: "Luxury"
@@ -154,231 +154,231 @@ const luxuryProducts = [
   },
   {
     name: "Royal Gold Inlay Bed",
-    price: 34800,
+    price: 29800,
     category: "Bedroom",
     img: royalBed,
     tag: "Master"
   },
   {
     name: "Zenith Floating Suite",
-    price: 31500,
+    price: 25500,
     category: "Bedroom",
     img: floatingBed,
     tag: "Modern"
   },
   {
     name: "Midnight Velvet Grandeur",
-    price: 35000,
+    price: 28900,
     category: "Bedroom",
     img: velvetBed,
     tag: "Designer"
   },
   {
     name: "Celestial Brass Canopy",
-    price: 34200,
+    price: 27200,
     category: "Bedroom",
     img: canopyBed,
     tag: "Luxury"
   },
   {
     name: "Milano Leather Platform",
-    price: 32800,
+    price: 24800,
     category: "Bedroom",
     img: leatherBed,
     tag: "Italian"
   },
   {
     name: "Ivory Serpentine Curve",
-    price: 44500,
+    price: 26500,
     category: "Sofa",
     img: ivorySofa,
     tag: "Modern"
   },
   {
     name: "Vogue Modular Leather",
-    price: 45000,
+    price: 29000,
     category: "Sofa",
     img: blackLeatherSofa,
     tag: "Italian"
   },
   {
     name: "Sapphire Grand Chesterfield",
-    price: 43500,
+    price: 27500,
     category: "Sofa",
     img: sapphireSofa,
     tag: "Luxury"
   },
   {
     name: "Nordic Oak Minimalist",
-    price: 38500,
+    price: 21500,
     category: "Sofa",
     img: scandiSofa,
     tag: "Scandi"
   },
   {
     name: "Avant-Garde Bubble Seat",
-    price: 44800,
+    price: 28800,
     category: "Sofa",
     img: bubbleSofa,
     tag: "Unique"
   },
   {
     name: "Chocolate Suede Sectional",
-    price: 45000,
+    price: 29500,
     category: "Sofa",
     img: suedeSectional,
     tag: "L-Shape"
   },
   {
     name: "Emerald Tuxedo Series",
-    price: 42200,
+    price: 24200,
     category: "Sofa",
     img: tuxedoSofa,
     tag: "Hotel Luxe"
   },
   {
     name: "Blush Shell Designer",
-    price: 39500,
+    price: 22500,
     category: "Sofa",
     img: shellSofa,
     tag: "Art Deco"
   },
   {
     name: "Cine-Luxe 4-Seater Theater",
-    price: 45000,
+    price: 30000,
     category: "Sofa",
     img: theaterSofa,
     tag: "Home Cinema"
   },
   {
     name: "Solaris Gold Daybed",
-    price: 41800,
+    price: 21800,
     category: "Sofa",
     img: daybedSofa,
     tag: "Minimalist"
   },
   {
     name: "Golden Comfort Sectional",
-    price: 44200,
+    price: 28200,
     category: "Sofa",
     img: premiumSectional,
     tag: "Signature"
   },
   {
     name: "Imperial Blue Almirah",
-    price: 29800,
+    price: 24800,
     category: "Bedroom",
     img: blueWardrobe,
     tag: "New Arrival"
   },
   {
     name: "Arcade Media Console",
-    price: 23500,
+    price: 18500,
     category: "Living",
     img: tealTvUnit,
     tag: "Modern"
   },
   {
     name: "Diamond Wing Master Bed",
-    price: 35000,
+    price: 29000,
     category: "Bedroom",
     img: diamondBed,
     tag: "Ultra Luxe"
   },
   {
     name: "Heritage Taupe Tijori",
-    price: 28500,
+    price: 22500,
     category: "Storage",
     img: taupeTijori,
     tag: "Secure"
   },
   {
     name: "Butterfly Art Master Suite",
-    price: 33800,
+    price: 26800,
     category: "Bedroom",
     img: butterflyBed,
     tag: "Artistic"
   },
   {
     name: "Royal Floral Teak Bed",
-    price: 35000,
+    price: 21500,
     category: "Bedroom",
     img: floralBed,
     tag: "Classic"
   },
   {
     name: "Academic 15-Door Locker",
-    price: 27500,
+    price: 19500,
     category: "Storage",
     img: studentLocker,
     tag: "School"
   },
   {
     name: "Elite Office Staff Unit",
-    price: 24800,
+    price: 17800,
     category: "Storage",
     img: staffLocker,
     tag: "Corporate"
   },
   {
     name: "Marble Aura LED Wall",
-    price: 24500,
+    price: 22500,
     category: "Living",
     img: marbleTvUnit,
     tag: "Luxury"
   },
   {
     name: "Teak Ribbed Grand Console",
-    price: 27200,
+    price: 21200,
     category: "Living",
     img: teakTvUnitDisplay,
     tag: "Bespoke"
   },
   {
     name: "Lumina Glass Media Suite",
-    price: 22800,
+    price: 19800,
     category: "Living",
     img: glassMediaCenter,
     tag: "Modern"
   },
   {
     name: "Teak Crystal Dining Set",
-    price: 34500,
+    price: 28500,
     category: "Dining",
     img: teakGlassDining,
     tag: "Modern"
   },
   {
     name: "Walnut Horizon Dining",
-    price: 35000,
+    price: 29000,
     category: "Dining",
     img: walnutGlassDining,
     tag: "Luxury"
   },
   {
     name: "Nordic Glass Dining",
-    price: 31800,
+    price: 25800,
     category: "Dining",
     img: oakGlassDining,
     tag: "Minimalist"
   },
   {
     name: "Elite Blue Deluxe Tijori",
-    price: 29200,
+    price: 23200,
     category: "Storage",
     img: blueTijori,
     tag: "Security"
   },
   {
     name: "Grand 5-Door Dressing Suite",
-    price: 29800,
+    price: 27800,
     category: "Storage",
     img: fiveDoorTijori,
     tag: "Premium"
   },
   {
     name: "Professional Side Dressing Unit",
-    price: 27500,
+    price: 24500,
     category: "Storage",
     img: sideDressingTijori,
     tag: "Versatile"
@@ -392,7 +392,7 @@ const luxuryProducts = [
   },
   {
     name: "Imperial Walnut Manager Chair",
-    price: 14800,
+    price: 13800,
     category: "Office",
     img: walnutChair,
     tag: "Premium"
@@ -413,35 +413,35 @@ const luxuryProducts = [
   },
   {
     name: "Bespoke Walnut Shoescase",
-    price: 24500,
+    price: 18500,
     category: "Storage",
     img: shoeCabinet,
     tag: "Essential"
   },
   {
     name: "Junior Sky Activity Set",
-    price: 4500,
+    price: 10500,
     category: "Kids",
     img: kidsStudySet,
     tag: "Playful"
   },
   {
     name: "Vivid Palette Cafe Trio",
-    price: 2800,
+    price: 12800,
     category: "Seating",
     img: cafeChairs,
     tag: "Modern"
   },
   {
     name: "Royal Woven High-Back",
-    price: 3200,
+    price: 13200,
     category: "Seating",
     img: royalArmchairs,
     tag: "Comfort"
   },
   {
     name: "Elite Walnut Office Table",
-    price: 24800,
+    price: 22800,
     category: "Office",
     img: executiveDesk,
     tag: "Professional"
@@ -455,21 +455,21 @@ const luxuryProducts = [
   },
   {
     name: "Zenith Dual Shoe Suite",
-    price: 22200,
+    price: 16200,
     category: "Storage",
     img: dualShoeCabinet,
     tag: "Minimalist"
   },
   {
     name: "Walnut Horizon Media Suite",
-    price: 27800,
+    price: 21800,
     category: "Living",
     img: walnutMediaSuite,
     tag: "Premium"
   },
   {
     name: "Nordic Slatted TV Wall",
-    price: 24800,
+    price: 19800,
     category: "Living",
     img: scandiTvUnit,
     tag: "Modern"
@@ -532,7 +532,7 @@ const luxuryProducts = [
   },
   {
     name: "Lumina Smoked Glass Desk",
-    price: 24900,
+    price: 22900,
     category: "Office",
     img: glassDesk,
     tag: "Luxury"
