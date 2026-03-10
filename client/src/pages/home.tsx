@@ -6,72 +6,24 @@ import { useState } from "react";
 
 // Assets
 import heroImage from "@assets/generated_images/luxury_living_room_with_golden_accents.png";
-import productChair from "@assets/WhatsApp_Image_2026-02-27_at_12.05.31_PM_1772341101012.jpeg";
-import productTable from "@assets/generated_images/marble_dining_table_gold_legs.png";
-import productBed from "@assets/generated_images/luxury_bedroom_interior.png";
+import customSofa from "@assets/generated_images/bespoke_customized_red_sofa.png";
 import officeChair from "@assets/generated_images/modern_office_chair_luxury.png";
 import tijoriSafe from "@assets/generated_images/luxury_steel_tijori_safe.png";
-import customSofa from "@assets/generated_images/bespoke_customized_red_sofa.png";
 import lockerUnit from "@assets/generated_images/luxury_steel_locker_unit.png";
-import royalSofa from "@assets/generated_images/royal_gold_velvet_sofa_set.png";
-import emeraldSofa from "@assets/generated_images/modern_emerald_velvet_sofa.png";
-import bossChair from "@assets/generated_images/executive_leather_boss_chair.png";
-import onyxDining from "@assets/generated_images/onyx_marble_dining_table_gold.png";
-import royalBed from "@assets/generated_images/modern_royal_bed_gold_inlay.png";
-import floatingBed from "@assets/generated_images/minimalist_floating_bed_suite.png";
-import velvetBed from "@assets/generated_images/velvet_tufted_designer_bed.png";
-import leatherBed from "@assets/generated_images/italian_leather_platform_bed.png";
-import ivorySofa from "@assets/generated_images/modern_curved_velvet_sofa_ivory.png";
-import blackLeatherSofa from "@assets/generated_images/italian_leather_modular_sofa_black.png";
-import sapphireSofa from "@assets/generated_images/luxury_chesterfield_redefined_blue.png";
-import scandiSofa from "@assets/generated_images/scandinavian_minimalist_sofa_grey.png";
-import bubbleSofa from "@assets/generated_images/avant-garde_bubble_sofa_orange.png";
-import suedeSectional from "@assets/generated_images/luxury_l-shaped_suede_sofa_brown.png";
-import tuxedoSofa from "@assets/generated_images/modern_tuxedo_sofa_velvet_emerald.png";
-import shellSofa from "@assets/generated_images/art_deco_shell_sofa_pink.png";
-import theaterSofa from "@assets/generated_images/luxury_reclining_home_theater_sofa.png";
-import daybedSofa from "@assets/generated_images/modern_daybed_sofa_gold_frame.png";
-import premiumSectional from "@assets/generated_images/modern_grey_sectional_sofa_premium.png";
-import blueWardrobe from "@assets/WhatsApp_Image_2026-02-27_at_12.05.03_PM_(1)_1772341105755.jpeg";
-import tealTvUnit from "@assets/generated_images/modern_tv_unit_console_teal.png";
-import diamondBed from "@assets/generated_images/luxury_cream_diamond_tufted_bed.png";
-import taupeTijori from "@assets/WhatsApp_Image_2026-02-27_at_12.02.31_PM_1772341123779.jpeg";
-import butterflyBed from "@assets/generated_images/modern_indian_butterfly_art_bed.png";
-import floralBed from "@assets/generated_images/contemporary_floral_indian_bed_design.png";
-import studentLocker from "@assets/generated_images/modern_school_student_locker_unit.png";
-import staffLocker from "@assets/generated_images/premium_office_staff_locker_system.png";
-import marbleTvUnit from "@assets/generated_images/modern_marble_led_tv_unit.png";
-import teakTvUnitDisplay from "@assets/generated_images/teak_ribbed_led_tv_console.png";
-import glassMediaCenter from "@assets/generated_images/contemporary_glass_led_media_center.png";
-import teakGlassDining from "@assets/generated_images/modern_glass_top_teak_dining_table.png";
-import walnutGlassDining from "@assets/generated_images/contemporary_walnut_glass_dining_set.png";
-import oakGlassDining from "@assets/generated_images/minimalist_oak_glass_dining_table.png";
-import blueTijori from "@assets/WhatsApp_Image_2026-02-27_at_12.05.02_PM_(1)_1772341113527.jpeg";
-import fiveDoorTijori from "@assets/WhatsApp_Image_2026-02-27_at_12.05.01_PM_(1)_1772341127419.jpeg";
-import sideDressingTijori from "@assets/WhatsApp_Image_2026-02-27_at_12.05.02_PM_(2)_1772341110619.jpeg";
-import diamondChair from "@assets/WhatsApp_Image_2026-02-27_at_12.05.31_PM_1772341101012.jpeg";
-import walnutChair from "@assets/generated_images/imperial_walnut_leather_executive_chair.png";
-import vaticanChair from "@assets/generated_images/vatican_tan_leather_throne_chair.png";
-import terracottaChair from "@assets/generated_images/royal_terracotta_ergonomic_office_chair.png";
-import shoeCabinet from "@assets/generated_images/bestpoke_walnut_shoe_storage_cabinet.png";
-import kidsStudySet from "@assets/generated_images/kids_sky_blue_study_set.png";
-import cafeChairs from "@assets/generated_images/designer_plastic_cafe_chairs_set.png";
-import royalArmchairs from "@assets/generated_images/royal_high-back_armchair_collection.png";
-import executiveDesk from "@assets/generated_images/elite_walnut_professional_executive_desk.png";
-import waitingBench from "@assets/generated_images/professional_3-seater_airport_waiting_bench.png";
-import dualShoeCabinet from "@assets/generated_images/dual-mode_walnut_shoe_cabinet_display.png";
-import walnutMediaSuite from "@assets/generated_images/modern_walnut_led_media_suite.png";
-import scandiTvUnit from "@assets/generated_images/scandinavian_oak_led_tv_unit.png";
-import libernovoGaming from "@assets/generated_images/libernovo_pro_gaming_throne.png";
-import codingChair from "@assets/generated_images/zenith_coding_ergonomic_chair.png";
-import engineerChair from "@assets/generated_images/titan_engineer_heavy-duty_chair.png";
-import libernovoStealth from "@assets/generated_images/libernovo_elite_stealth_gaming_chair.png";
-import cyberNexusChair from "@assets/generated_images/cyber-nexus_engineering_suite_seat.png";
-import standingDesk from "@assets/generated_images/dual-motor_electric_sit-stand_desk.png";
-import wfhDesk from "@assets/generated_images/zenith_minimalist_work-from-home_desk.png";
-import foldingDesk from "@assets/generated_images/compact_foldable_home_office_desk.png";
-import glassDesk from "@assets/generated_images/lumina_glass_top_executive_work_desk.png";
-import floatingDesk from "@assets/generated_images/bespoke_walnut_floating_workspace_desk.png";
+import productBed from "@assets/generated_images/luxury_bedroom_interior.png";
+import productTable from "@assets/generated_images/marble_dining_table_gold_legs.png";
+
+// New User Assets
+import luxuryBedMain from "@assets/WhatsApp_Image_2026-03-01_at_3.51.53_PM_1773126897082.jpeg";
+import bedroomSet from "@assets/WhatsApp_Image_2026-03-01_at_12.31.50_PM_1773126912875.jpeg";
+import tvUnitMain from "@assets/WhatsApp_Image_2026-03-01_at_12.08.47_PM_1773126915686.jpeg";
+import diningSetMain from "@assets/WhatsApp_Image_2026-03-01_at_12.03.06_PM_1773126917884.jpeg";
+import bunkBed from "@assets/WhatsApp_Image_2026-03-01_at_11.43.39_AM_1773126920501.jpeg";
+import officeChairGrey from "@assets/WhatsApp_Image_2026-03-01_at_11.31.57_AM_1773126934803.jpeg";
+import wardrobeModern from "@assets/WhatsApp_Image_2026-03-01_at_11.43.18_AM_1773126941095.jpeg";
+import sofaBlueSet from "@assets/WhatsApp_Image_2026-03-01_at_11.27.10_AM_1773126954948.jpeg";
+import sofaBlackSet from "@assets/WhatsApp_Image_2026-03-01_at_11.30.56_AM_1773126960729.jpeg";
+import wardrobeSlide from "@assets/WhatsApp_Image_2026-03-01_at_11.43.18_AM_1773126968140.jpeg";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -89,257 +41,75 @@ const formatPrice = (price: number) => {
 
 const luxuryProducts = [
   {
-    name: "Imperial Blue Almirah",
-    price: 24800,
-    category: "Bedroom",
-    img: blueWardrobe,
-    tag: "New Arrival"
+    name: "Royal Blue Velvet Sectional",
+    price: 42500,
+    category: "Sofa",
+    img: sofaBlueSet,
+    tag: "Top Choice"
   },
   {
-    name: "Arcade Media Console",
-    price: 18500,
-    category: "Living",
-    img: tealTvUnit,
-    tag: "Modern"
-  },
-  {
-    name: "Heritage Taupe Tijori",
-    price: 22500,
-    category: "Storage",
-    img: taupeTijori,
-    tag: "Secure"
-  },
-  {
-    name: "Academic 15-Door Locker",
-    price: 19500,
-    category: "Storage",
-    img: studentLocker,
-    tag: "School"
-  },
-  {
-    name: "Elite Office Staff Unit",
-    price: 17800,
-    category: "Storage",
-    img: staffLocker,
-    tag: "Corporate"
-  },
-  {
-    name: "Marble Aura LED Wall",
-    price: 22500,
-    category: "Living",
-    img: marbleTvUnit,
-    tag: "Luxury"
-  },
-  {
-    name: "Teak Ribbed Grand Console",
-    price: 21200,
-    category: "Living",
-    img: teakTvUnitDisplay,
-    tag: "Bespoke"
-  },
-  {
-    name: "Lumina Glass Media Suite",
-    price: 19800,
-    category: "Living",
-    img: glassMediaCenter,
-    tag: "Modern"
-  },
-  {
-    name: "Teak Crystal Dining Set",
-    price: 28500,
-    category: "Dining",
-    img: teakGlassDining,
-    tag: "Modern"
-  },
-  {
-    name: "Walnut Horizon Dining",
-    price: 29000,
-    category: "Dining",
-    img: walnutGlassDining,
-    tag: "Luxury"
-  },
-  {
-    name: "Nordic Glass Dining",
-    price: 25800,
-    category: "Dining",
-    img: oakGlassDining,
-    tag: "Minimalist"
-  },
-  {
-    name: "Elite Blue Deluxe Tijori",
-    price: 23200,
-    category: "Storage",
-    img: blueTijori,
-    tag: "Security"
-  },
-  {
-    name: "Grand 5-Door Dressing Suite",
-    price: 27800,
-    category: "Storage",
-    img: fiveDoorTijori,
+    name: "Midnight Noir Corner Sofa",
+    price: 38900,
+    category: "Sofa",
+    img: sofaBlackSet,
     tag: "Premium"
   },
   {
-    name: "Professional Side Dressing Unit",
-    price: 24500,
-    category: "Storage",
-    img: sideDressingTijori,
-    tag: "Versatile"
+    name: "Imperial Gold Inlay Bed",
+    price: 22000,
+    category: "Bedroom",
+    img: luxuryBedMain,
+    tag: "Featured"
   },
   {
-    name: "Diamond Executive Throne",
-    price: 14200,
+    name: "Master Bedroom Suite",
+    price: 34500,
+    category: "Bedroom",
+    img: bedroomSet,
+    tag: "Luxury"
+  },
+  {
+    name: "Heritage Teak Dining Set",
+    price: 28500,
+    category: "Dining",
+    img: diningSetMain,
+    tag: "Classic"
+  },
+  {
+    name: "Executive Grey Throne",
+    price: 12800,
     category: "Office",
-    img: diamondChair,
+    img: officeChairGrey,
     tag: "Ergonomic"
   },
   {
-    name: "Imperial Walnut Manager Chair",
-    price: 13800,
-    category: "Office",
-    img: walnutChair,
-    tag: "Premium"
-  },
-  {
-    name: "Vatican Tan Sovereign",
-    price: 15000,
-    category: "Office",
-    img: vaticanChair,
-    tag: "Luxury"
-  },
-  {
-    name: "Royal Terracotta Task Chair",
-    price: 11800,
-    category: "Office",
-    img: terracottaChair,
-    tag: "Modern"
-  },
-  {
-    name: "Junior Sky Activity Set",
-    price: 10500,
-    category: "Kids",
-    img: kidsStudySet,
-    tag: "Playful"
-  },
-  {
-    name: "Vivid Palette Cafe Trio",
-    price: 12800,
-    category: "Seating",
-    img: cafeChairs,
-    tag: "Modern"
-  },
-  {
-    name: "Royal Woven High-Back",
-    price: 13200,
-    category: "Seating",
-    img: royalArmchairs,
-    tag: "Comfort"
-  },
-  {
-    name: "Elite Walnut Office Table",
-    price: 22800,
-    category: "Office",
-    img: executiveDesk,
-    tag: "Professional"
-  },
-  {
-    name: "Terminal Cobalt 3-Seater",
-    price: 11500,
-    category: "Office",
-    img: waitingBench,
-    tag: "Commercial"
-  },
-  {
-    name: "Zenith Dual Shoe Suite",
-    price: 16200,
+    name: "Modern Sliding Wardrobe",
+    price: 26500,
     category: "Storage",
-    img: dualShoeCabinet,
-    tag: "Minimalist"
+    img: wardrobeSlide,
+    tag: "Space Saver"
   },
   {
-    name: "Walnut Horizon Media Suite",
+    name: "Aura LED Media Center",
     price: 21800,
     category: "Living",
-    img: walnutMediaSuite,
-    tag: "Premium"
-  },
-  {
-    name: "Nordic Slatted TV Wall",
-    price: 19800,
-    category: "Living",
-    img: scandiTvUnit,
+    img: tvUnitMain,
     tag: "Modern"
   },
   {
-    name: "Libernovo Pro Gaming Throne",
-    price: 14500,
-    category: "Office",
-    img: libernovoGaming,
-    tag: "Gaming"
+    name: "Industrial Metal Bunk Bed",
+    price: 18500,
+    category: "Bedroom",
+    img: bunkBed,
+    tag: "Kids"
   },
   {
-    name: "Zenith Coding Ergonomic Chair",
-    price: 13800,
-    category: "Office",
-    img: codingChair,
-    tag: "Coding"
-  },
-  {
-    name: "Titan Engineer Heavy-Duty",
-    price: 14200,
-    category: "Office",
-    img: engineerChair,
-    tag: "Engineering"
-  },
-  {
-    name: "Libernovo Elite Stealth",
-    price: 14800,
-    category: "Office",
-    img: libernovoStealth,
-    tag: "Pro Gaming"
-  },
-  {
-    name: "Cyber-Nexus Suite Seat",
-    price: 13500,
-    category: "Office",
-    img: cyberNexusChair,
-    tag: "Tech"
-  },
-  {
-    name: "Aura Electric Sit-Stand Desk",
-    price: 24500,
-    category: "Office",
-    img: standingDesk,
-    tag: "Adjustable"
-  },
-  {
-    name: "Zenith Minimalist WFH Desk",
-    price: 17800,
-    category: "Office",
-    img: wfhDesk,
+    name: "Designer Shoescase Suite",
+    price: 19200,
+    category: "Storage",
+    img: wardrobeModern,
     tag: "Essential"
-  },
-  {
-    name: "Space-Saver Foldable Desk",
-    price: 11800,
-    category: "Office",
-    img: foldingDesk,
-    tag: "Compact"
-  },
-  {
-    name: "Lumina Smoked Glass Desk",
-    price: 22900,
-    category: "Office",
-    img: glassDesk,
-    tag: "Luxury"
-  },
-  {
-    name: "Walnut Floating Workspace",
-    price: 21500,
-    category: "Office",
-    img: floatingDesk,
-    tag: "Modern"
-  },
+  }
 ];
 
 export default function Home() {
@@ -350,15 +120,15 @@ export default function Home() {
       <Navbar />
 
       <main className="flex-1">
-        {/* Hero Section - Optimized for Desktop & Mobile */}
+        {/* Hero Section */}
         <section className="relative h-[80vh] md:h-[90vh] min-h-[500px] flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img 
-              src={customSofa} 
-              alt="Bespoke Red Sofa" 
+              src={luxuryBedMain} 
+              alt="Luxury Bed Display" 
               fetchPriority="high"
-              className="w-full h-full object-cover brightness-[0.85]"
-              style={{ objectPosition: 'center 30%' }}
+              className="w-full h-full object-cover brightness-[0.75]"
+              style={{ objectPosition: 'center 60%' }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background via-black/20 to-transparent opacity-80" />
           </div>
@@ -378,8 +148,7 @@ export default function Home() {
                 & Elegance
               </h1>
               <p className="text-base md:text-xl text-white/80 max-w-xl mx-auto font-light leading-relaxed px-4">
-                Premium furniture tailored to your lifestyle. From bespoke sofas to high-security lockers, 
-                discover excellence at Golden Furniture.
+                Premium furniture tailored to your lifestyle. Explore our new collection of sofas, beds, and almirahs.
               </p>
               <div className="pt-6 md:pt-8 flex flex-col sm:flex-row gap-4 justify-center items-center px-4">
                 <Button size="lg" className="w-full sm:w-auto bg-red-600 text-white hover:bg-red-700 rounded-none px-8 h-12 md:h-14 text-sm md:text-base tracking-wide min-w-[180px]">
@@ -393,7 +162,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Categories Section - Responsive Grid */}
+        {/* Categories Section */}
         <section className="py-16 md:py-24 bg-card">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12 md:mb-16 space-y-3 md:space-y-4">
@@ -403,12 +172,12 @@ export default function Home() {
 
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6">
               {[
-                { icon: Armchair, label: "Sofa", img: customSofa },
+                { icon: Armchair, label: "Sofa", img: sofaBlueSet },
                 { icon: Briefcase, label: "Office", img: officeChair },
                 { icon: Lock, label: "Tijori", img: tijoriSafe },
                 { icon: LayoutGrid, label: "Lockers", img: lockerUnit },
-                { icon: Star, label: "Beds", img: productBed },
-                { icon: ArrowRight, label: "Dining", img: productTable },
+                { icon: Star, label: "Beds", img: luxuryBedMain },
+                { icon: ArrowRight, label: "Dining", img: diningSetMain },
               ].map((item, i) => (
                 <div key={i} className="group cursor-pointer text-center space-y-3 md:space-y-4">
                   <div className="aspect-square bg-secondary/30 rounded-full flex items-center justify-center transition-all duration-300 group-hover:bg-red-600 group-hover:text-white group-hover:scale-105 overflow-hidden relative mx-auto w-24 h-24 sm:w-32 sm:h-32 md:w-full md:h-full">
@@ -427,12 +196,12 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Featured Products - Mobile First Grid */}
+        {/* Featured Products */}
         <section className="py-16 md:py-24 bg-secondary/10">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12 md:mb-16 space-y-3 md:space-y-4">
               <h2 className="font-serif text-3xl md:text-5xl font-medium">Signature Collection</h2>
-              <p className="text-muted-foreground text-sm md:text-base">Premium selection of our most exclusive luxury pieces.</p>
+              <p className="text-muted-foreground text-sm md:text-base">Premium selection of our most exclusive luxury pieces with real photos.</p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
               {luxuryProducts.map((product, index) => (
@@ -456,9 +225,6 @@ export default function Home() {
                       {product.tag}
                     </div>
                     <div className="absolute inset-0 bg-black/0 md:group-hover:bg-black/5 transition-colors duration-300" />
-                    <Button className="hidden md:flex absolute bottom-6 left-1/2 -translate-x-1/2 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 bg-white text-black hover:bg-white/90 min-w-[140px] shadow-lg rounded-none text-xs uppercase tracking-widest">
-                      View Details
-                    </Button>
                   </div>
                   <div className="space-y-1">
                     <p className="text-[8px] md:text-[0.6rem] uppercase tracking-widest text-muted-foreground">{product.category}</p>
@@ -471,50 +237,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Visit Section - Responsive Layout */}
-        <section className="py-16 md:py-24">
-          <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
-            <div className="space-y-4 md:space-y-6 text-center lg:text-left">
-              <h2 className="font-serif text-3xl md:text-5xl font-medium">Visit Our Showroom</h2>
-              <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
-                Experience the quality firsthand. Visit our store in Lunawada, Gujarat, where our designers can help you customize the perfect pieces for your home.
-              </p>
-              <div className="space-y-4 pt-4 text-left max-w-md mx-auto lg:mx-0">
-                <div className="flex items-center gap-4">
-                  <div className="h-10 w-10 shrink-0 rounded-full bg-red-50 flex items-center justify-center text-red-600">
-                    <Star className="h-5 w-5" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-xs md:text-sm uppercase tracking-wider">Address</h4>
-                    <p className="text-muted-foreground text-xs md:text-sm">Lunawada, Gujarat, India</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="h-10 w-10 shrink-0 rounded-full bg-red-50 flex items-center justify-center text-red-600">
-                    <Clock className="h-5 w-5" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-xs md:text-sm uppercase tracking-wider">Hours</h4>
-                    <p className="text-muted-foreground text-xs md:text-sm">Mon - Sat: 9:00 AM - 8:00 PM</p>
-                  </div>
-                </div>
-              </div>
-              <Button size="lg" className="w-full sm:w-auto bg-red-600 text-white hover:bg-red-700 rounded-none px-8 h-12 md:h-14 mt-6">
-                Get Directions
-              </Button>
-            </div>
-            <div className="relative aspect-video lg:aspect-square overflow-hidden rounded-none shadow-2xl order-first lg:order-last">
-              <img 
-                src={heroImage} 
-                alt="Showroom" 
-                loading="lazy"
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
-        </section>
-
-        {/* Trust Factors - Stacked on Mobile */}
+        {/* Trust Factors */}
         <section className="py-12 md:py-16 bg-black text-white">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 text-center">
