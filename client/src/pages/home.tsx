@@ -53,7 +53,7 @@ import diamondChair from "@assets/WhatsApp_Image_2026-02-27_at_12.05.31_PM_17723
 import walnutChair from "@assets/generated_images/imperial_walnut_leather_executive_chair.png";
 import vaticanChair from "@assets/generated_images/vatican_tan_leather_throne_chair.png";
 import terracottaChair from "@assets/generated_images/royal_terracotta_ergonomic_office_chair.png";
-import shoeCabinet from "@assets/generated_images/bespoke_walnut_shoe_storage_cabinet.png";
+import shoeCabinet from "@assets/generated_images/bestpoke_walnut_shoe_storage_cabinet.png";
 import kidsStudySet from "@assets/generated_images/kids_sky_blue_study_set.png";
 import cafeChairs from "@assets/generated_images/designer_plastic_cafe_chairs_set.png";
 import royalArmchairs from "@assets/generated_images/royal_high-back_armchair_collection.png";
@@ -89,167 +89,6 @@ const formatPrice = (price: number) => {
 
 const luxuryProducts = [
   {
-    name: "Royal Gold Velvet Sofa Set",
-    price: 28500,
-    category: "Sofa",
-    img: royalSofa,
-    tag: "Royal"
-  },
-  {
-    name: "Emerald Curve Sectional",
-    price: 24200,
-    category: "Sofa",
-    img: emeraldSofa,
-    tag: "Modern"
-  },
-  {
-    name: "Executive Boss Series VII",
-    price: 14800,
-    category: "Office",
-    img: bossChair,
-    tag: "Premium"
-  },
-  {
-    name: "Onyx Gold Dining Ensemble",
-    price: 29500,
-    category: "Dining",
-    img: onyxDining,
-    tag: "Exclusive"
-  },
-  {
-    name: "Crimson Velvet Sofa",
-    price: 26800,
-    category: "Sofa",
-    img: customSofa,
-    tag: "Bespoke"
-  },
-  {
-    name: "Imperial Steel Tijori",
-    price: 18500,
-    category: "Security",
-    img: tijoriSafe,
-    tag: "High Security"
-  },
-  {
-    name: "Carrara Gold Dining Table",
-    price: 27900,
-    category: "Dining",
-    img: productTable,
-    tag: "Luxury"
-  },
-  {
-    name: "Director's Series Chair",
-    price: 12500,
-    category: "Office",
-    img: officeChair,
-    tag: "Executive"
-  },
-  {
-    name: "Royal Gold Inlay Bed",
-    price: 29800,
-    category: "Bedroom",
-    img: royalBed,
-    tag: "Master"
-  },
-  {
-    name: "Zenith Floating Suite",
-    price: 25500,
-    category: "Bedroom",
-    img: floatingBed,
-    tag: "Modern"
-  },
-  {
-    name: "Midnight Velvet Grandeur",
-    price: 28900,
-    category: "Bedroom",
-    img: velvetBed,
-    tag: "Designer"
-  },
-  {
-    name: "Milano Leather Platform",
-    price: 24800,
-    category: "Bedroom",
-    img: leatherBed,
-    tag: "Italian"
-  },
-  {
-    name: "Ivory Serpentine Curve",
-    price: 26500,
-    category: "Sofa",
-    img: ivorySofa,
-    tag: "Modern"
-  },
-  {
-    name: "Vogue Modular Leather",
-    price: 29000,
-    category: "Sofa",
-    img: blackLeatherSofa,
-    tag: "Italian"
-  },
-  {
-    name: "Sapphire Grand Chesterfield",
-    price: 27500,
-    category: "Sofa",
-    img: sapphireSofa,
-    tag: "Luxury"
-  },
-  {
-    name: "Nordic Oak Minimalist",
-    price: 21500,
-    category: "Sofa",
-    img: scandiSofa,
-    tag: "Scandi"
-  },
-  {
-    name: "Avant-Garde Bubble Seat",
-    price: 28800,
-    category: "Sofa",
-    img: bubbleSofa,
-    tag: "Unique"
-  },
-  {
-    name: "Chocolate Suede Sectional",
-    price: 29500,
-    category: "Sofa",
-    img: suedeSectional,
-    tag: "L-Shape"
-  },
-  {
-    name: "Emerald Tuxedo Series",
-    price: 24200,
-    category: "Sofa",
-    img: tuxedoSofa,
-    tag: "Hotel Luxe"
-  },
-  {
-    name: "Blush Shell Designer",
-    price: 22500,
-    category: "Sofa",
-    img: shellSofa,
-    tag: "Art Deco"
-  },
-  {
-    name: "Cine-Luxe 4-Seater Theater",
-    price: 30000,
-    category: "Sofa",
-    img: theaterSofa,
-    tag: "Home Cinema"
-  },
-  {
-    name: "Solaris Gold Daybed",
-    price: 21800,
-    category: "Sofa",
-    img: daybedSofa,
-    tag: "Minimalist"
-  },
-  {
-    name: "Golden Comfort Sectional",
-    price: 28200,
-    category: "Sofa",
-    img: premiumSectional,
-    tag: "Signature"
-  },
-  {
     name: "Imperial Blue Almirah",
     price: 24800,
     category: "Bedroom",
@@ -264,32 +103,11 @@ const luxuryProducts = [
     tag: "Modern"
   },
   {
-    name: "Diamond Wing Master Bed",
-    price: 29000,
-    category: "Bedroom",
-    img: diamondBed,
-    tag: "Ultra Luxe"
-  },
-  {
     name: "Heritage Taupe Tijori",
     price: 22500,
     category: "Storage",
     img: taupeTijori,
     tag: "Secure"
-  },
-  {
-    name: "Butterfly Art Master Suite",
-    price: 26800,
-    category: "Bedroom",
-    img: butterflyBed,
-    tag: "Artistic"
-  },
-  {
-    name: "Royal Floral Teak Bed",
-    price: 21500,
-    category: "Bedroom",
-    img: floralBed,
-    tag: "Classic"
   },
   {
     name: "Academic 15-Door Locker",
@@ -395,13 +213,6 @@ const luxuryProducts = [
     category: "Office",
     img: terracottaChair,
     tag: "Modern"
-  },
-  {
-    name: "Bespoke Walnut Shoescase",
-    price: 18500,
-    category: "Storage",
-    img: shoeCabinet,
-    tag: "Essential"
   },
   {
     name: "Junior Sky Activity Set",
