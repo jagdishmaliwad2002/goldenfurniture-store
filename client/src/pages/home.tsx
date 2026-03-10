@@ -4,10 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Navbar, Footer } from "@/components/layout";
 import { useState } from "react";
 
-// Assets with lazy loading logic or optimized imports if possible
-// Note: In Vite, these are handled as static assets. 
-// For "Fast Loading", we'll ensure <img> tags use loading="lazy" and fetchpriority="high" for hero.
-
+// Assets
 import heroImage from "@assets/generated_images/luxury_living_room_with_golden_accents.png";
 import productChair from "@assets/WhatsApp_Image_2026-02-27_at_12.05.31_PM_1772341101012.jpeg";
 import productTable from "@assets/generated_images/marble_dining_table_gold_legs.png";
@@ -23,7 +20,6 @@ import onyxDining from "@assets/generated_images/onyx_marble_dining_table_gold.p
 import royalBed from "@assets/generated_images/modern_royal_bed_gold_inlay.png";
 import floatingBed from "@assets/generated_images/minimalist_floating_bed_suite.png";
 import velvetBed from "@assets/generated_images/velvet_tufted_designer_bed.png";
-import canopyBed from "@assets/generated_images/modern_canopy_bed_brass.png";
 import leatherBed from "@assets/generated_images/italian_leather_platform_bed.png";
 import ivorySofa from "@assets/generated_images/modern_curved_velvet_sofa_ivory.png";
 import blackLeatherSofa from "@assets/generated_images/italian_leather_modular_sofa_black.png";
@@ -168,13 +164,6 @@ const luxuryProducts = [
     category: "Bedroom",
     img: velvetBed,
     tag: "Designer"
-  },
-  {
-    name: "Celestial Brass Canopy",
-    price: 27200,
-    category: "Bedroom",
-    img: canopyBed,
-    tag: "Luxury"
   },
   {
     name: "Milano Leather Platform",
