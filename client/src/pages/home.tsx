@@ -25,6 +25,7 @@ import sofaBlueSet from "@assets/WhatsApp_Image_2026-03-01_at_11.27.10_AM_177312
 import sofaBlackSet from "@assets/WhatsApp_Image_2026-03-01_at_11.30.56_AM_1773126960729.jpeg";
 import wardrobeSlide from "@assets/WhatsApp_Image_2026-03-01_at_11.43.18_AM_1773126968140.jpeg";
 import sofaGoldBlack from "@assets/WhatsApp_Image_2026-03-01_at_11.27.10_AM_1773217328933.jpeg";
+import sofaBlueTone from "@assets/WhatsApp_Image_2026-03-01_at_11.26.41_AM_1773217491066.jpeg";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -46,77 +47,96 @@ const luxuryProducts = [
     price: 42500,
     category: "Sofa",
     img: sofaBlueSet,
-    tag: "Top Choice"
+    tag: "Top Choice",
+    productId: "123456789"
   },
   {
     name: "Luxury Gold & Black Sectional",
-    price: 30000,
+    price: 29000,
     category: "Sofa",
     img: sofaGoldBlack,
-    tag: "Bestseller"
+    tag: "Bestseller",
+    productId: "123456789"
+  },
+  {
+    name: "Premium Blue & White Sectional",
+    price: 29000,
+    category: "Sofa",
+    img: sofaBlueTone,
+    tag: "Bestseller",
+    productId: "123456789"
   },
   {
     name: "Midnight Noir Corner Sofa",
     price: 38900,
     category: "Sofa",
     img: sofaBlackSet,
-    tag: "Premium"
+    tag: "Premium",
+    productId: "123456789"
   },
   {
     name: "Imperial Gold Inlay Bed",
     price: 22000,
     category: "Bedroom",
     img: luxuryBedMain,
-    tag: "Featured"
+    tag: "Featured",
+    productId: "123456789"
   },
   {
     name: "Master Bedroom Suite",
     price: 34500,
     category: "Bedroom",
     img: bedroomSet,
-    tag: "Luxury"
+    tag: "Luxury",
+    productId: "123456789"
   },
   {
     name: "Heritage Teak Dining Set",
     price: 28500,
     category: "Dining",
     img: diningSetMain,
-    tag: "Classic"
+    tag: "Classic",
+    productId: "123456789"
   },
   {
     name: "Executive Grey Throne",
     price: 12800,
     category: "Office",
     img: officeChairGrey,
-    tag: "Ergonomic"
+    tag: "Ergonomic",
+    productId: "123456789"
   },
   {
     name: "Modern Sliding Wardrobe",
     price: 26500,
     category: "Storage",
     img: wardrobeSlide,
-    tag: "Space Saver"
+    tag: "Space Saver",
+    productId: "123456789"
   },
   {
     name: "Aura LED Media Center",
     price: 21800,
     category: "Living",
     img: tvUnitMain,
-    tag: "Modern"
+    tag: "Modern",
+    productId: "123456789"
   },
   {
     name: "Industrial Metal Bunk Bed",
     price: 18500,
     category: "Bedroom",
     img: bunkBed,
-    tag: "Kids"
+    tag: "Kids",
+    productId: "123456789"
   },
   {
     name: "Designer Shoescase Suite",
     price: 19200,
     category: "Storage",
     img: wardrobeModern,
-    tag: "Essential"
+    tag: "Essential",
+    productId: "123456789"
   }
 ];
 
@@ -221,6 +241,7 @@ export default function Home() {
                   viewport={{ once: true, margin: "50px" }} 
                   transition={{ delay: index % 4 * 0.1 }} 
                   className="group cursor-pointer"
+                  data-testid={`product-card-${product.productId}-${index}`}
                 >
                   <div className="relative aspect-[3/4] overflow-hidden bg-white mb-3 md:mb-4 shadow-sm group">
                     <img 
@@ -238,6 +259,7 @@ export default function Home() {
                     <p className="text-[8px] md:text-[0.6rem] uppercase tracking-widest text-muted-foreground">{product.category}</p>
                     <h3 className="font-serif text-lg md:text-xl group-hover:text-red-600 transition-colors leading-tight">{product.name}</h3>
                     <p className="font-bold text-base md:text-lg text-red-600">{formatPrice(product.price)}</p>
+                    <p className="text-xs text-gray-500 pt-1">ID: {product.productId}</p>
                   </div>
                 </motion.div>
               ))}
