@@ -129,14 +129,6 @@ const luxuryProducts = [
     img: bunkBed,
     tag: "Kids",
     productId: "123456789"
-  },
-  {
-    name: "Designer Shoescase Suite",
-    price: 19200,
-    category: "Storage",
-    img: wardrobeModern,
-    tag: "Essential",
-    productId: "123456789"
   }
 ];
 
@@ -243,12 +235,12 @@ export default function Home() {
                   className="group cursor-pointer"
                   data-testid={`product-card-${product.productId}-${index}`}
                 >
-                  <div className="relative aspect-[3/4] overflow-hidden bg-white mb-3 md:mb-4 shadow-sm group">
+                  <div className="relative aspect-[3/4] overflow-hidden bg-white mb-3 md:mb-4 shadow-sm group h-80 sm:h-96">
                     <img 
                       src={product.img} 
                       alt={product.name} 
                       loading="lazy"
-                      className="w-full h-full object-contain p-2 transition-transform duration-700 md:group-hover:scale-110" 
+                      className="w-full h-full object-cover p-2 transition-transform duration-700 md:group-hover:scale-110" 
                     />
                     <div className="absolute top-2 left-2 md:top-4 md:left-4 bg-red-600 text-white text-[8px] md:text-[0.6rem] font-bold px-2 py-1 uppercase tracking-tighter">
                       {product.tag}
