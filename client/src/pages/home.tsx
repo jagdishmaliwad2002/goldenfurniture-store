@@ -24,6 +24,7 @@ import wardrobeModern from "@assets/WhatsApp_Image_2026-03-01_at_11.43.18_AM_177
 import sofaBlueSet from "@assets/WhatsApp_Image_2026-03-01_at_11.27.10_AM_1773126954948.jpeg";
 import sofaBlackSet from "@assets/WhatsApp_Image_2026-03-01_at_11.30.56_AM_1773126960729.jpeg";
 import wardrobeSlide from "@assets/WhatsApp_Image_2026-03-01_at_11.43.18_AM_1773126968140.jpeg";
+import sofaGoldBlack from "@assets/WhatsApp_Image_2026-03-01_at_11.27.10_AM_1773217328933.jpeg";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -46,6 +47,13 @@ const luxuryProducts = [
     category: "Sofa",
     img: sofaBlueSet,
     tag: "Top Choice"
+  },
+  {
+    name: "Luxury Gold & Black Sectional",
+    price: 30000,
+    category: "Sofa",
+    img: sofaGoldBlack,
+    tag: "Bestseller"
   },
   {
     name: "Midnight Noir Corner Sofa",
