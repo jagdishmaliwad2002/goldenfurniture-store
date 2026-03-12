@@ -21,7 +21,6 @@ import diningSetMain from "@assets/WhatsApp_Image_2026-03-01_at_12.03.06_PM_1773
 import bunkBed from "@assets/WhatsApp_Image_2026-03-01_at_11.43.39_AM_1773126920501.jpeg";
 import officeChairGrey from "@assets/WhatsApp_Image_2026-03-01_at_11.31.57_AM_1773126934803.jpeg";
 import wardrobeModern from "@assets/WhatsApp_Image_2026-03-01_at_11.43.18_AM_1773126941095.jpeg";
-import sofaBlueSet from "@assets/WhatsApp_Image_2026-03-01_at_11.27.10_AM_1773126954948.jpeg";
 import sofaBlackSet from "@assets/WhatsApp_Image_2026-03-01_at_11.30.56_AM_1773126960729.jpeg";
 import wardrobeSlide from "@assets/WhatsApp_Image_2026-03-01_at_11.43.18_AM_1773126968140.jpeg";
 import sofaGoldBlack from "@assets/WhatsApp_Image_2026-03-01_at_11.27.10_AM_1773217328933.jpeg";
@@ -43,14 +42,6 @@ const formatPrice = (price: number) => {
 };
 
 const luxuryProducts = [
-  {
-    name: "Royal Blue Velvet Sectional",
-    price: 42500,
-    category: "Sofa",
-    img: sofaBlueSet,
-    tag: "Top Choice",
-    productId: "123456789"
-  },
   {
     name: "Luxury Gold & Black Sectional",
     price: 29000,
@@ -201,7 +192,7 @@ export default function Home() {
 
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6">
               {[
-                { icon: Armchair, label: "Sofa", img: sofaBlueSet },
+                { icon: Armchair, label: "Sofa", img: sofaGoldBlack },
                 { icon: Briefcase, label: "Office", img: officeChair },
                 { icon: Lock, label: "Tijori", img: tijoriSafe },
                 { icon: LayoutGrid, label: "Lockers", img: lockerUnit },
