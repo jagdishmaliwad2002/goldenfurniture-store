@@ -26,6 +26,7 @@ import sofaBlackSet from "@assets/WhatsApp_Image_2026-03-01_at_11.30.56_AM_17731
 import wardrobeSlide from "@assets/WhatsApp_Image_2026-03-01_at_11.43.18_AM_1773126968140.jpeg";
 import sofaGoldBlack from "@assets/WhatsApp_Image_2026-03-01_at_11.27.10_AM_1773217328933.jpeg";
 import sofaBlueTone from "@assets/WhatsApp_Image_2026-03-01_at_11.26.41_AM_1773217491066.jpeg";
+import luxuryMediaConsole from "@assets/WhatsApp_Image_2026-03-12_at_5.16.55_AM_1773315473849.jpeg";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -112,6 +113,14 @@ const luxuryProducts = [
     category: "Storage",
     img: wardrobeSlide,
     tag: "Space Saver",
+    productId: "123456789"
+  },
+  {
+    name: "Luxury LED Media Console",
+    price: 22500,
+    category: "Living",
+    img: luxuryMediaConsole,
+    tag: "Premium",
     productId: "123456789"
   },
   {
