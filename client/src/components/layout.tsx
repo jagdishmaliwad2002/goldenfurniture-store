@@ -152,11 +152,21 @@ export function Footer() {
         </div>
 
         <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-muted-foreground">
-          <p>© 2024 Lunawada Furniture. All rights reserved.</p>
-          <div className="flex gap-6">
-            <Link href="#" className="hover:text-foreground">Terms</Link>
-            <Link href="#" className="hover:text-foreground">Privacy</Link>
-            <Link href="#" className="hover:text-foreground">Cookies</Link>
+          <p>© 2024 Golden Furniture. All rights reserved.</p>
+          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6">
+            <div className="flex gap-6">
+              <Link href="#" className="hover:text-foreground">Terms</Link>
+              <Link href="#" className="hover:text-foreground">Privacy</Link>
+              <Link href="#" className="hover:text-foreground">Cookies</Link>
+            </div>
+            <a 
+              href="https://wa.me/917778988826" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-primary transition-colors cursor-pointer"
+            >
+              Design developed by Mahisagarsoft
+            </a>
           </div>
         </div>
       </div>
