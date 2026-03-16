@@ -67,14 +67,6 @@ const luxuryProducts = [
     productId: "123456789"
   },
   {
-    name: "Imperial Gold Inlay Bed",
-    price: 22000,
-    category: "Bedroom",
-    img: luxuryBedMain,
-    tag: "Featured",
-    productId: "123456789"
-  },
-  {
     name: "Master Bedroom Suite",
     price: 34500,
     category: "Bedroom",
