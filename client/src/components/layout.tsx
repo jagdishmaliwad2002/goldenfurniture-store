@@ -89,11 +89,11 @@ export function Footer() {
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <h3 className="font-serif text-2xl font-bold text-red-600">
-                ગોલ્ડન ફર્નિચર
+                Golden Furniture Lunawada
               </h3>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed max-w-xs">
-              ગોલ્ડન ફર્નિચર - તમારી જીવનશૈલી માટે શ્રેષ્ઠ પસંદગી. Crafting timeless furniture pieces that bring elegance and comfort to your home since 2010. Visit our store in Lunawada, Gujarat.
+              ગોલ્ડન ફર્નિચર - તમારી જીવનશૈલી માટે શ્રેષ્ઠ પસંદગી. The best furniture shop in Lunawada Mahisagar, offering reasonable and modern furniture including sofa sets, beds, wardrobes, dining tables, and home furniture at affordable prices.
             </p>
             <div className="flex gap-4">
               <Button variant="ghost" size="icon" className="h-8 w-8 hover:text-primary hover:bg-transparent -ml-2"><Facebook className="h-4 w-4" /></Button>
@@ -152,7 +152,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-muted-foreground">
-          <p>© 2024 Golden Furniture. All rights reserved.</p>
+          <p>© 2024 Golden Furniture Lunawada. All rights reserved.</p>
           <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6">
             <div className="flex gap-6">
               <Link href="#" className="hover:text-foreground">Terms</Link>

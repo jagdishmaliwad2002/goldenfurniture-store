@@ -180,14 +180,14 @@ export default function Home() {
               className="space-y-4 md:space-y-6 max-w-4xl mx-auto"
             >
               <span className="inline-block py-1 px-3 border border-white/30 rounded-full text-[10px] md:text-xs font-medium tracking-[0.2em] uppercase backdrop-blur-sm bg-white/10">
-                Since 2010 • Lunawada
+                Golden Furniture Lunawada • Since 2010
               </span>
               <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-medium leading-[1.1] tracking-tight">
-                Crafting <span className="italic font-light text-primary-foreground/90">Comfort</span> <br className="hidden sm:block"/>
-                & Elegance
+                Best Furniture Shop <br className="hidden sm:block"/>
+                <span className="italic font-light text-primary-foreground/90">in Lunawada</span>
               </h1>
               <p className="text-base md:text-xl text-white/80 max-w-xl mx-auto font-light leading-relaxed px-4">
-                Premium furniture tailored to your lifestyle. Explore our new collection of sofas, beds, and almirahs.
+                Golden Furniture Mahisagar offers reasonable and modern furniture. Explore our luxury sofa sets, wooden beds, wardrobes, and home furniture at affordable prices.
               </p>
               <div className="pt-6 md:pt-8 flex flex-col sm:flex-row gap-4 justify-center items-center px-4">
                 <Button size="lg" className="w-full sm:w-auto bg-red-600 text-white hover:bg-red-700 rounded-none px-8 h-12 md:h-14 text-sm md:text-base tracking-wide min-w-[180px]">
@@ -296,6 +296,24 @@ export default function Home() {
                 <Lock className="h-8 w-8 md:h-10 md:w-10 mx-auto text-red-600" />
                 <h3 className="text-lg md:text-xl font-medium">Secure Storage</h3>
                 <p className="text-gray-400 text-xs md:text-sm">Market leaders in high-security tijori systems.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* SEO Content Section */}
+        <section className="py-12 bg-white text-muted-foreground text-sm">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
+                <h2 className="text-lg font-serif font-bold text-black mb-4">Golden Furniture Lunawada - Best Furniture Shop in Mahisagar</h2>
+                <p className="mb-4 leading-relaxed">Looking for the <strong>best furniture shop in Lunawada</strong>? Golden Furniture offers a premium range of <strong>home furniture in lunawada</strong> and <strong>office furniture in lunawada</strong>. As a leading <strong>furniture showroom in lunawada mahisagar</strong>, we provide high-quality, <strong>reasonable furniture in lunawada</strong> including luxury sofa sets, wooden beds, almirahs, dining tables, and TV units. Whether you need <strong>affordable bedroom furniture in lunawada</strong> or customized modular furniture, our <strong>furniture store in lunawada gujarat</strong> has you covered.</p>
+                <p className="leading-relaxed">We are recognized as the top <strong>furniture dealer in mahisagar</strong> offering the <strong>latest furniture design in lunawada</strong>. Visit us for the best <strong>furniture price in lunawada</strong>.</p>
+              </div>
+              <div>
+                <h2 className="text-lg font-serif font-bold text-black mb-4">Our Premium Furniture Collection</h2>
+                <p className="mb-4 leading-relaxed">From finding a <strong>luxury sofa set in lunawada</strong> to a <strong>king size bed in lunawada</strong>, our extensive catalog caters to all needs. We offer the <strong>best wooden furniture shop in lunawada</strong> experience with options like a <strong>center table in lunawada</strong>, <strong>wardrobe in lunawada</strong>, and complete <strong>living room furniture in lunawada</strong>.</p>
+                <p className="leading-relaxed">Searching for "<strong>furniture near me in lunawada</strong>" or "<strong>sasta furniture lunawada</strong>"? Golden Furniture guarantees quality with great <strong>furniture offers in lunawada</strong>. Experience the best <strong>furniture home delivery in lunawada</strong> when you buy from the finest <strong>furniture manufacturer in gujarat</strong>.</p>
               </div>
             </div>
           </div>
