@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Star, Truck, ShieldCheck, Clock, Lock, Armchair, Briefcase, LayoutGrid, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Navbar, Footer } from "@/components/layout";
+import { CustomerReviews } from "@/components/Reviews";
 import { useState } from "react";
 
 // Assets
@@ -277,6 +278,9 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Customer Reviews */}
+        <CustomerReviews />
 
         {/* Trust Factors */}
         <section className="py-12 md:py-16 bg-black text-white">
