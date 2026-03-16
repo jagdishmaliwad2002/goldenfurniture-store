@@ -26,6 +26,9 @@ import wardrobeSlide from "@assets/WhatsApp_Image_2026-03-01_at_11.43.18_AM_1773
 import sofaGoldBlack from "@assets/WhatsApp_Image_2026-03-01_at_11.27.10_AM_1773217328933.jpeg";
 import sofaBlueTone from "@assets/WhatsApp_Image_2026-03-01_at_11.26.41_AM_1773217491066.jpeg";
 import luxuryMediaConsole from "@assets/WhatsApp_Image_2026-03-12_at_5.16.55_AM_1773315473849.jpeg";
+import officeDeskSet from "@assets/WhatsApp_Image_2026-03-13_at_6.38.16_PM_1773667691163.jpeg";
+import chairCombo from "@assets/WhatsApp_Image_2026-03-13_at_4.40.26_PM_1773667724509.jpeg";
+import premiumBedSuite from "@assets/WhatsApp_Image_2026-03-13_at_4.29.42_PM_1773667767795.jpeg";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -42,6 +45,30 @@ const formatPrice = (price: number) => {
 };
 
 const luxuryProducts = [
+  {
+    name: "Executive Office Desk Set",
+    price: 42000,
+    category: "Office",
+    img: officeDeskSet,
+    tag: "Premium",
+    productId: "123456789"
+  },
+  {
+    name: "Executive Chair Combo",
+    price: 15500,
+    category: "Office",
+    img: chairCombo,
+    tag: "Bestseller",
+    productId: "123456789"
+  },
+  {
+    name: "Premium Wooden Bed Suite",
+    price: 49999,
+    category: "Bedroom",
+    img: premiumBedSuite,
+    tag: "Luxury",
+    productId: "123456789"
+  },
   {
     name: "Luxury Gold & Black Sectional",
     price: 29000,
