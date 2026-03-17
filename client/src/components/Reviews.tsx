@@ -4,39 +4,141 @@ import { useState } from "react";
 
 const INITIAL_REVIEWS = [
   {
-    name: "Rahul Panchal",
-    date: "2 days ago",
-    text: "Bought a premium sofa set recently. The quality and finish are just amazing. Highly recommend Golden Furniture for best designs!",
+    name: "UMAR BK",
+    date: "3 days ago",
+    text: "One of the best furniture store in mahisagar district.good quality products and reasonable price.",
     rating: 5,
   },
   {
-    name: "Amit Patel",
+    name: "Baria Kiritbhai",
     date: "1 week ago",
-    text: "Great experience. Golden furniture has the best almirah and tijori collection in the entire district.",
+    text: "The best place to purchase home and office needs of furniture, price is also reasonable visit to golden furniture lunawada",
     rating: 5,
   },
   {
-    name: "Meena Desai",
-    date: "3 weeks ago",
-    text: "Best furniture shop in Mahisagar. Staff is very helpful and they have latest designs. Bought dining table and it looks premium.",
+    name: "Kamlesh Pateliya",
+    date: "2 weeks ago",
+    text: "Good",
     rating: 5,
   },
   {
-    name: "Ravi Patel",
-    date: "1 month ago",
-    text: "Excellent furniture quality and very reasonable prices compared to other shops in Lunawada. Bought a sofa set and it's perfect.",
+    name: "Panchal Rameshbhai",
+    date: "2 weeks ago",
+    text: "Good products.",
     rating: 5,
   },
   {
-    name: "Sanjay Shah",
+    name: "Abdullah Rasid",
     date: "2 months ago",
-    text: "Very good collection of modern beds and wardrobes. The delivery was fast and safe. Highly recommended for home furniture.",
+    text: "Best place to buy furniture in lunawada. Best collection",
     rating: 5,
   },
   {
-    name: "Kiran Parmar",
+    name: "Salauddin Shekh",
     date: "2 months ago",
-    text: "Purchased office chairs and desk. Quality is top notch and they gave good discount. Must visit Golden Furniture.",
+    text: "Good quality product best price",
+    rating: 5,
+  },
+  {
+    name: "Bakrawala Abubakr",
+    date: "3 months ago",
+    text: "Golden furniture is the best furniture shop in mahisagar all most 15 years furniture experience and all item very high quality and best price",
+    rating: 5,
+  },
+  {
+    name: "jagdish maliwad",
+    date: "5 months ago",
+    text: "I recently purchased an ergonomic chair with neck, back, and arm support from Golden Furniture, Lunawada. The quality of the chair is excellent, very comfortable, and perfect for long hours of sitting.",
+    rating: 5,
+  },
+  {
+    name: "bharat patel",
+    date: "1 year ago",
+    text: "Very good sofa com bed fantastic quality in material",
+    rating: 5,
+  },
+  {
+    name: "Amir Bakrawala",
+    date: "1 year ago",
+    text: "This place is great! Amazing selection and good quality products. Everyone was super kind, friendly and knowledgeable! I will be recommending golden furniture in the future to anyone looking for good quality furniture in a stress free environment.",
+    rating: 5,
+  },
+  {
+    name: "Murtaza Sukhsarwala",
+    date: "1 year ago",
+    text: "Best quality furniture in affordable price",
+    rating: 5,
+  },
+  {
+    name: "Jafar Surti",
+    date: "1 year ago",
+    text: "Good quality,best furniture in town.",
+    rating: 5,
+  },
+  {
+    name: "Abubakr Bakrawala",
+    date: "1 year ago",
+    text: "Top level furniture items 15 years old shop",
+    rating: 5,
+  },
+  {
+    name: "piyush panchal",
+    date: "1 year ago",
+    text: "best quality with best price",
+    rating: 5,
+  },
+  {
+    name: "millan patel",
+    date: "1 year ago",
+    text: "Best Quality Work, Best Experience",
+    rating: 5,
+  },
+  {
+    name: "Faizal Khan",
+    date: "2 years ago",
+    text: "The best place to purchase your household needs of furniture. The price is also reasonable and the quality of the product is also perfect.",
+    rating: 5,
+  },
+  {
+    name: "Umar Bk",
+    date: "2 years ago",
+    text: "Best furniture shop in lunawada , beautiful design different colour combination at this place.",
+    rating: 5,
+  },
+  {
+    name: "Qasim Vadla",
+    date: "2 years ago",
+    text: "It is good to visit , within this area they have good verity of furniture..trusted and good behaviour respective people...",
+    rating: 5,
+  },
+  {
+    name: "Vaibhavi Vankar",
+    date: "2 years ago",
+    text: "Good furniture and so many options available",
+    rating: 5,
+  },
+  {
+    name: "Ajay Patel",
+    date: "3 years ago",
+    text: "Beautiful design cool Color combination at this place if you’re looking for better furniture once visit the showroom you will get modern design furniture",
+    rating: 5,
+  },
+  {
+    name: "Dr.Sunil Valand",
+    date: "4 years ago",
+    text: "New furniture pattern available... price range menimum to High.",
+    rating: 5,
+  },
+  {
+    name: "Hanif Shaikh",
+    date: "4 years ago",
+    text: "Very good work, everything is done on time and changes can be made to the designs",
+    rating: 5,
+  },
+  {
+    name: "Shaikh Savban",
+    date: "4 years ago",
+    text: "Best quality 💯 guaranteed Thanks 😊 Very useful 🙂",
     rating: 5,
   }
 ];
@@ -66,7 +168,7 @@ export function CustomerReviews() {
       <div className="container mx-auto px-4 mb-10 text-center">
         <h2 className="font-serif text-3xl md:text-5xl font-medium mb-4">Customer Reviews</h2>
         <div className="flex items-center justify-center gap-2 mb-4">
-          <span className="text-xl font-bold">4.9</span>
+          <span className="text-xl font-bold">4.6</span>
           <div className="flex text-yellow-400">
             {[1, 2, 3, 4, 5].map((star) => (
               <Star key={star} className="w-5 h-5 fill-current" />
@@ -74,7 +176,7 @@ export function CustomerReviews() {
           </div>
         </div>
         <div className="text-muted-foreground text-sm font-medium mb-6">
-          Based on verified Google Reviews
+          Based on 47 verified Google Reviews
         </div>
         <button 
           onClick={() => setIsModalOpen(true)}
@@ -94,12 +196,12 @@ export function CustomerReviews() {
             animate={{ x: ["0%", "-50%"] }}
             transition={{ 
               ease: "linear", 
-              duration: Math.max(40, reviews.length * 10), // Adjust speed based on number of reviews
+              duration: Math.max(100, reviews.length * 6), // Slower, consistent speed
               repeat: Infinity 
             }}
           >
             {/* Repeat the array enough times to ensure seamless infinite scroll */}
-            {[...reviews, ...reviews, ...reviews, ...reviews].map((review, idx) => (
+            {[...reviews, ...reviews].map((review, idx) => (
               <div 
                 key={idx}
                 className="flex-none w-[300px] md:w-[400px] bg-secondary/10 p-6 md:p-8 rounded-xl shadow-sm border border-secondary/20 hover:border-secondary/40 transition-colors"
@@ -110,16 +212,16 @@ export function CustomerReviews() {
                       <Star key={i} className="w-4 h-4 fill-current" />
                     ))}
                   </div>
-                  <span className="text-xs text-muted-foreground ml-auto">{review.date}</span>
+                  <span className="text-xs text-muted-foreground ml-auto whitespace-nowrap">{review.date}</span>
                 </div>
-                <p className="text-sm md:text-base text-foreground leading-relaxed mb-4 italic">
+                <p className="text-sm md:text-base text-foreground leading-relaxed mb-4 italic line-clamp-4">
                   "{review.text}"
                 </p>
                 <div className="flex items-center gap-3 mt-auto">
-                  <div className="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center text-red-600 font-bold text-sm">
+                  <div className="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center text-red-600 font-bold text-sm shrink-0">
                     {review.name.charAt(0)}
                   </div>
-                  <span className="font-bold text-sm">{review.name}</span>
+                  <span className="font-bold text-sm truncate">{review.name}</span>
                 </div>
               </div>
             ))}
