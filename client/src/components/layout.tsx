@@ -84,7 +84,7 @@ export function Footer() {
   return (
     <footer className="bg-secondary/30 pt-16 pb-8 border-t">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
@@ -100,19 +100,6 @@ export function Footer() {
               <Button variant="ghost" size="icon" className="h-8 w-8 hover:text-primary hover:bg-transparent"><Instagram className="h-4 w-4" /></Button>
               <Button variant="ghost" size="icon" className="h-8 w-8 hover:text-primary hover:bg-transparent"><Twitter className="h-4 w-4" /></Button>
             </div>
-          </div>
-
-          {/* Links */}
-          <div>
-            <h4 className="font-serif font-bold text-lg mb-6">Quick Links</h4>
-            <ul className="space-y-3 text-sm text-muted-foreground">
-              <li><Link href="/" className="hover:text-primary transition-colors">Home</Link></li>
-              <li><Link href="/shop" className="hover:text-primary transition-colors">Shop</Link></li>
-              <li><Link href="/collections" className="hover:text-primary transition-colors">Collections</Link></li>
-              <li><Link href="#" className="hover:text-primary transition-colors">Inspiration</Link></li>
-              <li><Link href="/about" className="hover:text-primary transition-colors">About Us</Link></li>
-              <li><Link href="/contact" className="hover:text-primary transition-colors">Contact</Link></li>
-            </ul>
           </div>
 
           {/* Support */}
@@ -137,16 +124,19 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Location Map */}
           <div>
-            <h4 className="font-serif font-bold text-lg mb-6">Newsletter</h4>
-            <div className="space-y-4">
-              <p className="text-sm text-muted-foreground">Subscribe to get updates on new collections and exclusive offers.</p>
-              <div className="flex gap-2">
-                <Input placeholder="Your email address" className="bg-background" />
-                <Button size="icon" className="bg-primary shrink-0"><ArrowRight className="h-4 w-4" /></Button>
-              </div>
-              <p className="text-[0.7rem] text-muted-foreground">info@goldenfurniture.com</p>
+            <h4 className="font-serif font-bold text-lg mb-6">Our Location</h4>
+            <div className="w-full h-48 md:h-64 rounded-lg overflow-hidden border border-border shadow-sm">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2938.097774236427!2d73.60278247415052!3d23.132243412228803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3960ae52fa8090a7%3A0x751379344ad8b704!2sGOLDEN%20FURNITURE.!5e1!3m2!1sen!2sin!4v1774846600224!5m2!1sen!2sin" 
+                width="100%" 
+                height="100%" 
+                style={{ border: 0 }} 
+                allowFullScreen={true} 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
         </div>
