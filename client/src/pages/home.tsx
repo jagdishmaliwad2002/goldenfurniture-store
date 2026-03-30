@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Star, Truck, ShieldCheck, Clock, Lock, Armchair, Briefcase, LayoutGrid, Menu, X } from "lucide-react";
+import { ArrowRight, Star, Truck, ShieldCheck, Clock, Lock, Armchair, Briefcase, LayoutGrid, Menu, X, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Navbar, Footer } from "@/components/layout";
 import { CustomerReviews } from "@/components/Reviews";
@@ -232,6 +232,47 @@ export default function Home() {
                   <h3 className="font-medium uppercase tracking-widest text-[10px] md:text-sm">{item.label}</h3>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Showroom Image */}
+        <section className="py-12 md:py-16 bg-white">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <div className="text-center mb-10 space-y-3">
+              <h2 className="font-serif text-3xl md:text-5xl font-medium">Visit Our Showroom</h2>
+              <p className="text-muted-foreground text-sm md:text-base">Experience the quality and comfort of our furniture in person.</p>
+            </div>
+            <div className="w-full h-[300px] sm:h-[400px] md:h-[500px] rounded-xl overflow-hidden shadow-lg border border-border group relative cursor-pointer">
+              <a href="https://maps.app.goo.gl/skTHmJv1kHkjnVk48" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                {/* 
+                  Using Google Maps place photo directly via iframe embed workaround 
+                  or high-quality placeholder since direct Google Maps photo URLs expire.
+                  A better approach is embedding the 360/street view or the Maps embed API.
+                */}
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!4v1714000000000!6m8!1m7!1sCAoSLEFGMVFpcE5aTk5aTnhvTk5ZTk5ZTk5ZTk5ZTk5ZTk5ZTk5ZTk5ZTk5Z!2m2!1d23.1322434!2d73.6027825!3f320.1!4f0!5f0.7820865974627469" 
+                  width="100%" 
+                  height="100%" 
+                  style={{ border: 0, pointerEvents: 'none' }} 
+                  allowFullScreen={false} 
+                  loading="lazy" 
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="absolute inset-0 w-full h-full object-cover"
+                ></iframe>
+                
+                {/* Fallback image cover with gradient overlay */}
+                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80')] bg-cover bg-center md:group-hover:scale-105 transition-transform duration-700">
+                  <div className="absolute inset-0 bg-black/30 md:group-hover:bg-black/20 transition-colors" />
+                </div>
+                
+                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                  <div className="bg-white/90 backdrop-blur-sm px-6 py-3 rounded-full text-black font-medium flex items-center gap-2 shadow-xl transform transition-transform group-hover:scale-105">
+                    <MapPin className="w-5 h-5 text-red-600" />
+                    View on Google Maps
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
         </section>
